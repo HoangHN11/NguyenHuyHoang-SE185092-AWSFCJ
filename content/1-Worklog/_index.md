@@ -7,9 +7,6 @@ pre: " <b> 1. </b> "
 ---
 
 
-
-
-
 **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
 
 **Week 2:** [Exploring EC2, S3, Lambda, and IAM](1.2-week2/)
