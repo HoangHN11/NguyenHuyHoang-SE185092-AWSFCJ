@@ -1,133 +1,137 @@
 ---
 title: "Blog 3"
-weight: 1
+date: 2025-10-11
+weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
+---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# How TCS's Smart Power Plant Solution on AWS Helps Utilities Optimize Operations and Drive Energy Transition
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
-
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
-
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, _“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”_, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+*By Alakh Srivastava, Rajesh Natesan, Siva Thangavel, and Yogesh Chaturvedi – March 19, 2025, in the Amazon DocumentDB, Amazon ECS, Amazon S3, AWS IoT Core, AWS Step Functions, Energy (Oil & Gas), Industries section.*
 
 ---
 
-## Architecture Guidance
+## Solution Overview
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+Advanced digital technologies are revolutionizing the energy industry, enabling organizations to achieve sustainability goals while reducing costs and carbon emissions.  
+According to McKinsey, digital transformation in the energy sector could unlock **$1.6 trillion in value** by 2035, helping reduce **20–30% of operational costs** and **5% of carbon emissions**.
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+As the industry moves towards a distributed power generation model integrated with renewable energy, businesses require smart solutions such as **digital grids, AI-driven energy coordination**, and **real-time monitoring platforms**.  
 
-**The solution architecture is now as follows:**
+The **TCS Smart Power Plant solution** was developed to address these needs — delivering a 0.5% increase in performance, an 8% reduction in NOx, and improving 8–10% accuracy in renewable power generation forecasts.  
+Built on the **AWS** platform, the solution leverages the power of **AI/ML** to process real-time data from thousands of energy sensors across multiple locations.
 
-> _Figure 1. Overall architecture; colored boxes represent distinct services._
-
----
-
-While the term _microservices_ has some inherent ambiguity, certain traits are common:
-
-- Small, autonomous, loosely coupled
-- Reusable, communicating through well-defined interfaces
-- Specialized to do one thing well
-- Often implemented in an **event-driven architecture**
-
-When determining where to draw boundaries between microservices, consider:
-
-- **Intrinsic**: technology used, performance, reliability, scalability
-- **Extrinsic**: dependent functionality, rate of change, reusability
-- **Human**: team ownership, managing _cognitive load_
+> *This article explains how TCS and AWS collaborate to deliver superior operational efficiency and sustainable business outcomes for the energy industry.*
 
 ---
 
-## Technology Choices and Communication Scope
+## Solution Architecture and Data Flow
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+The solution architecture is designed with a closed-loop data flow, utilizing AWS services to manage, process, and analyze information comprehensively.
 
----
+![Blog Image 3 - 1](/static/images/3-BlogImage/blog3-1.jpg)
+> *Figure 1. Overall architecture of the Smart Power Plant solution on AWS.*
 
-## The Pub/Sub Hub
-
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.
-
-- Each microservice depends only on the _hub_
-- Inter-microservice connections are limited to the contents of the published message
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous _push_
-
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+- **Data Ingestion:** Data is collected from OPC-UA (industrial devices), on-premise historical systems, and Amazon S3 data lakes.  
+  Each unit can send up to 4,000 sensor values per minute.  
+- **Ingestion and Orchestration:** AWS IoT Core receives the data stream and triggers **AWS Step Functions** for automated orchestration.  
+- **Data Processing:** **AWS Lambda functions** perform data cleaning, calculate KPIs, and generate alerts.  
+- **Storage:** **Amazon DocumentDB** stores structured data (KPIs, alerts), **Amazon S3** stores raw sensor data and training results.  
+- **ML Model Training:** Performed in **Amazon SageMaker**, with models stored in **Amazon Elastic Container Registry (ECR)**.  
+- **Real-Time Inference:** Models are deployed through **Amazon ECS** for TCS InTwin (online analytics engine).  
+- **Application Deployment:** Front-end/back-end interfaces run containers on **Amazon ECS**, ensuring flexible scalability.
 
 ---
 
-## Core Microservice
+## Key Capabilities
 
-Provides foundational data and communication layer, including:
+The TCS Smart Power Plant solution provides four core capabilities that transform how plants operate:
 
-- **Amazon S3** bucket for data
-- **Amazon DynamoDB** for data catalog
-- **AWS Lambda** to write messages into the data lake and catalog
-- **Amazon SNS** topic as the _hub_
-- **Amazon S3** bucket for artifacts such as Lambda code
+![Blog Image 3 - 2](/static/images/3-BlogImage/blog3-2.jpg)
+> *Figure 2. Four core capabilities of the solution.*
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+1. **Self-learning Digital Twin (AI):**  
+   Combines real data and physical AI models to continuously adapt to operational conditions, ensuring accurate predictions and cost savings.  
 
----
+2. **Open and Scalable Solution:**  
+   Can integrate with existing plant systems or proprietary AI models, with an open and explainable architecture.
 
-## Front Door Microservice
+3. **Low-code Digital Workbench:**  
+   Enables rapid creation and management of AI models, supporting the creation of KPIs, FMEA, and specific use cases.  
 
-- Provides an API Gateway for external REST interaction
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**
-- Self-managed _deduplication_ mechanism using DynamoDB instead of SNS FIFO because:
-  1. SNS deduplication TTL is only 5 minutes
-  2. SNS FIFO requires SQS FIFO
-  3. Ability to proactively notify the sender that the message is a duplicate
+4. **Pre-built Platform:**  
+   Configurable modules for each plant, reducing deployment time and enabling easy scaling.
 
 ---
 
-## Staging ER7 Microservice
+## Real-world Use Cases
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute
-- Step Functions Express Workflow to convert ER7 → JSON
-- Two Lambdas:
-  1. Fix ER7 formatting (newline, carriage return)
-  2. Parsing logic
-- Result or error is pushed back into the pub/sub hub
+### Solar Power Generation Forecasting  
+Using ML models and advanced analytics to predict renewable energy generation.  
+At an offshore wind farm in the UK, forecasting accuracy improved by **15.1%**, leading to a **6%** revenue increase.  
+
+### Combustion Optimization in Heat Generation  
+At a Japanese plant, AI improved **0.5% performance**, reduced **8% NOx**, and saved **$2.5 million/year**.  
+
+### Predictive Maintenance of Gas Turbine Components  
+At an Australian plant, models predicted failures **8–12 months in advance**, reducing maintenance costs by 20% and downtime.
 
 ---
 
-## New Features in the Solution
+## Business Benefits
 
-### 1. AWS CloudFormation Cross-Stack References
+TCS's solution helps energy enterprises:
 
-Example _outputs_ in the core microservice:
+| Benefit | Impact |
+| ------- | -------- |
+| **Reduce Operational Costs** | Cut maintenance and operational costs by up to 20%. |
+| **Accurate Failure Prediction** | Achieve error prediction accuracy up to 85%. |
+| **Optimize KPIs and Reduce Emissions** | Improve performance while reducing carbon emissions. |
+| **Support Workforce** | AI assists decision-making, reducing dependence on individual experience. |
 
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
-```
+Additionally, AWS integration eliminates data silos, boosts productivity, and provides a standardized platform for future power plants.
+
+---
+
+## Conclusion
+
+The **TCS Smart Power Plant solution on AWS** is shaping the sustainable future of the energy industry.  
+Through AI and advanced analytics, this platform helps optimize performance, predictive maintenance, and seamlessly integrate renewable energy.
+
+TCS — with deep expertise and a team of AWS-certified specialists — has demonstrated its ability to deploy successfully across various types of plants, from traditional thermal plants to large-scale renewable energy.
+
+> *To learn more, please see the original TCS post on the Smart Power Plant solution on AWS.*
+
+---
+
+## About the Authors
+
+> ![Blog Image 3 - 3](/static/images/3-BlogImage/blog3-3.jpg)  
+> **Alakh Srivastava**  
+> *Global Product Director – Smart Power Plant Practice, TCS.*  
+> Over 20 years of experience in digital transformation in the power industry, specializing in renewable energy, AI, and industrial IoT.
+
+---
+
+> ![Blog Image 3 - 4](/static/images/3-BlogImage/blog3-4.jpg)  
+> **Rajesh Natesan**  
+> *Chief Technical Group Leader – Smart Power Plant Group, TCS.*  
+> 20 years of experience in IoT, AI/ML, and large-scale energy system architecture.
+
+---
+
+> ![Blog Image 3 - 5](/static/images/3-BlogImage/blog3-5.jpg)  
+> **Siva Thangavel**  
+> *Partner Solution Architect at AWS.*  
+> Provides optimal architectural solutions for partners and enterprise customers across multiple industries.
+
+---
+
+> ![Blog Image 3 - 6](/static/images/3-BlogImage/blog3-6.jpg)  
+> **Yogesh Chaturvedi**  
+> *Principal Solution Architect at AWS – Energy and Utilities.*  
+> Focuses on helping customers solve challenges using cloud technology. Outside work, he enjoys hiking, traveling, and sports.
+
+---
