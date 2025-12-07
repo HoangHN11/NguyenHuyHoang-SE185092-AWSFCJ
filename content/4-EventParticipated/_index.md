@@ -1,38 +1,52 @@
 ---
 title: "Events Participated"
-date: 2025-09-18
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
 ### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** Vietnam Cloud Day 2025  
+**Event Name:** AWS Cloud Day Vietnam - AI Edition 2025  
+**Date:** September 18, 2025  
+**Location:** 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City  
+**Role in the Event:** Participant  
 
-&emsp;**Date:** September 18, 2025  
+#### **Event Overview and Key Activities**  
+The AWS Cloud Day Vietnam - AI Edition 2025 served as a pivotal forum designed to accelerate Vietnam's digital transformation, harnessing the power of Cloud Computing and Artificial Intelligence. The event explored four core themes:  
+- Democratizing Generative AI for Enterprises
+- Bridging the Gap Between Business and IT in Finance  
+- Accelerating Industry Modernization  
+- Enhancing Security Frameworks
 
-&emsp;**Location:** 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City  
+The day’s activities featured high-level plenary sessions with government officials and industry leaders, followed by in-depth technical tracks focused on *Data Strategy*, *DevOps*, and *Cloud Migration Pathways*.
 
-&emsp;**Role in the Event:** Participant  
+#### **Key Takeaways and Outcomes**  
+- **Strategic Insights**: Gained a deeper understanding of the critical interplay between Generative AI and a robust data strategy, identified as the key driver for success in modern enterprises.  
+- **Migration to Operate Mindset**: Developed an appreciation for the *"Migrate to Operate"* framework, which emphasizes using AI to streamline operations and optimize costs post-cloud migration.  
+- **Technical Knowledge**: Acquired insights into the integration of Generative AI within the DevOps lifecycle, particularly in automating code generation and testing.  
+- **Security Innovations**: Learned about the *"Security by Design"* approach, which focuses on embedding security measures throughout the application lifecycle rather than relying solely on perimeter defenses.
 
-&emsp;**Brief Description of the Event and Main Activities:**  
-&emsp;Vietnam Cloud Day is an annual event organized by AWS, bringing together experts, businesses, and the tech community to share insights on emerging trends in cloud computing, AI, big data, and cybersecurity.  
-&emsp;The event features in-depth discussions, hands-on technical workshops, live demonstrations of modern cloud solutions, and opportunities to network and exchange practical experiences.  
-
-&emsp;**Outcomes or Achievements (Lessons Learned, New Skills, Contributions to Team/Project):**  
-&emsp;- Gained deeper understanding of core AWS services (EC2, S3, Lambda, RDS, etc.)  
-&emsp;- Learned about the latest trends in AI and Cloud adoption in enterprises  
-&emsp;- Improved ability to learn new technologies and design systems on cloud platforms  
-&emsp;- Expanded professional network with engineers and experts in the Cloud Computing field  
-
+This event provided invaluable knowledge and practical takeaways, further enhancing my understanding of the intersection between AI, cloud computing, and security in the context of modern enterprise solutions.
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+### [Event 2](4.2-Event2/) 
+**Event Name:** Discover Agentic AI – Amazon QuickSuite Workshop  
+**Date:** November 7, 2025  
+**Location:** AWS Vietnam Office, Bitexco Financial Tower, District 1, Ho Chi Minh City  
+**Role in the Event:** Participant  
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+#### **Event Overview and Key Activities** The "Discover Agentic AI – Amazon QuickSuite Workshop," organized in collaboration with Cloud Kinetics, served as a strategic technical session marking the evolution from passive Generative AI to autonomous **Agentic AI**. The event featured the **first-ever live demonstration** of Amazon QuickSuite in Vietnam. The workshop focused on four key pillars:  
+- Defining the "Agentic" paradigm: Autonomy, Reasoning, and Execution.
+- Integrating Data and AI through the Amazon QuickSuite ecosystem.
+- Hands-on building of AI concepts with AWS technical experts.
+- Financial enablement for innovation through the AWS LIFT Program.
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+The agenda combined theoretical architectural sessions with practical, hands-on workshops using *Amazon QuickSight* and *Quick Suite Q*, allowing participants to build functional AI concepts in real-time.
 
-&emsp;**Role:** Attendee  
+#### **Key Takeaways and Outcomes** - **Paradigm Shift**: Gained a clear understanding of the transition from Generative AI (content creation) to **Agentic AI** (autonomous task execution), where systems can perceive environments and act independently to solve business problems.  
+- **Unified Ecosystem**: Acquired practical insights into **Amazon QuickSuite**, learning how to integrate business intelligence (QuickSight) with generative capabilities to create "Analyst Agents" that streamline operations.  
+- **Operational Agility**: Recognized the strategic value of the "Quick" framework, which emphasizes rapid deployment and "Time-to-Value," allowing enterprises to implement complex AI solutions with speed.  
+- **Strategic Enablement**: Learned about the **AWS LIFT Program** (offering up to $80,000 USD in credit), identifying it as a critical mechanism to de-risk R&D and accelerate the adoption of high-performance computing.
+
+This workshop provided a concrete roadmap for building autonomous enterprise systems, combining theoretical knowledge with hands-on technical skills and strategic financial insights to accelerate digital transformation.
