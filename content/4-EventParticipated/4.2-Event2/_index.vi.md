@@ -85,6 +85,6 @@ Tham dự workshop **“Khám Phá Agentic AI”** tại Bitexco Financial Tower
 -   **Nguồn vốn thúc đẩy đổi mới**: Chương trình LIFT thay đổi câu hỏi từ "Chúng ta có đủ khả năng chi trả không?" thành "Chúng ta có thể bắt đầu nhanh đến mức nào?"
 
 #### Một số hình ảnh sự kiện
-![Add your event photos here](/images/576352733_1552881986068418_5178329068929110174_n.png)
+![Add your event photos here](/images/event2.png)
 
 > Nhìn chung, workshop đã thành công trong việc làm sáng tỏ khái niệm phức tạp về Agentic AI và cung cấp các công cụ cụ thể, nguồn vốn và chuyên môn cần thiết để bắt đầu xây dựng ngay lập tức. Đây là một bước đi chiến lược giúp trao quyền cho người tham dự chuyển đổi hoạt động kinh doanh của họ.

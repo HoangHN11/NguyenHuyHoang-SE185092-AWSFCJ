@@ -1,6 +1,6 @@
 ---
 title: "Báo cáo thực tập"
-date: 2025-09-11
+date: 2025-09-08
 weight: 1
 chapter: false
 ---
@@ -19,7 +19,7 @@ chapter: false
 
 &emsp; **Ngành:** Công nghệ thông tin
 
-&emsp; **Lớp:** AWS092025
+&emsp; **Lớp:** 
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 08/12/2025
 
-![Ảnh đại diện của bạn](/static/images/1-Avata/z3782526550865_cafe0b213c78cb1f4ee269258bb2b626.png)
+![Ảnh đại diện của bạn](/images/avata.png)
 
 ### Nội dung báo cáo
 

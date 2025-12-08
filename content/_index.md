@@ -1,6 +1,6 @@
 ---
 title: "Internship Report"
-date: 2025-09-11
+date: 2025-09-08
 weight: 1
 chapter: false
 ---
@@ -19,7 +19,7 @@ chapter: false
 
 &emsp; **Major:** Software Engineering
 
-&emsp; **Class:** AWS092025
+&emsp; **Class:** 
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 08/09/2025 to 08/12/2025
 
-![Your profile picture](/public/images/z3782526550865_cafe0b213c78cb1f4ee269258bb2b626.jpg)
+![Your profile picture](/images/avata.png)
 
 ### Report Content
 

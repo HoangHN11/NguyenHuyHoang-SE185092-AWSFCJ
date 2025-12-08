@@ -119,7 +119,7 @@ Attending the **AWS Cloud Day Vietnam - AI Edition 2025** offered a comprehensiv
  * **Security is everyone's job:** It must be integrated from the first line of code.
 
 ### Event Photos
-![Add your event photos here](/images/550507904_4212873012314601_938234409218235304_n.png)
+![Add your event photos here](/images/event1.png)
 
 ---
 
