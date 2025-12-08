@@ -1,217 +1,189 @@
 ---
 title: "Blog 1"
-date: 2025-10-05
-weight: 3
+date: 2025-10-08
+weight: 1
 chapter: false
-pre: " <b> 3.3. </b> "
+pre: " <b> 3.1. </b> "
+---
 ---
 
----
+# How iFood Built a Platform to Run Hundreds of Machine Learning Models with Amazon SageMaker Inference
 
-# **New Courses and Certifications Updated from AWS Training and Certification in June 2025**
-
-by [Training and Certification Blog Editor](https://aws.amazon.com/blogs/training-and-certification/author/erica-harbison-donham/) | JUNE 24, 2025 | in [Announcements](https://aws.amazon.com/blogs/training-and-certification/category/post-types/announcements/) , [AWS Training and Certification](https://aws.amazon.com/blogs/training-and-certification/category/aws-training-and-certification/) | [Permalink](https://aws.amazon.com/blogs/training-and-certification/june-2025-new-offerings/) | [Share](https://aws.amazon.com/vi/blogs/training-and-certification/june-2025-new-offerings/#)
-
-Welcome to our June announcement of new training and certification course launches—designed to equip you and your teams with the skills needed to work with AWS services and solutions.
-
-Did you miss our May course update? Check it out [here](https://aws.amazon.com/blogs/training-and-certification/may-2025-new-offerings/) .
-
-This month, we launched 20 new digital training products on [AWS Skill Builder](https://skillbuilder.aws/?trk=64736b0c-d90d-411f-8ebc-7d69b097d3cd&sc_channel=el) , including 8 new AWS Builder Labs, 1 new Digital Classroom course, a free game-based recertification option for AWS Certified Cloud Practitioner, as well as additional language support for Exam Prep materials to assist with AWS Certified AI Practitioner and AWS Certified Machine Learning Engineer Associate certification exams.
-
-## **New AWS Skill Builder Subscription Features**
-
-The [AWS Skill Builder subscription package](https://aws.amazon.com/training/digital/?abl=sec&sec=byw) is available globally and unlocks advanced AWS Certification exam prep programs along with AWS Cloud hands-on training programs, including interactive learning experiences and hands-on activities like AWS Cloud Quest, AWS Industry Quest, AWS Builder Labs, and AWS Jam challenges. In-depth AWS Digital Classroom courses with expert-led instruction are available with [Individual Annual subscription packages](https://aws.amazon.com/training/digital/?abl=sec&sec=byw) or [Team subscription packages](https://aws.amazon.com/training/digital/team-subscription/?abl=sec&sec=byw) .
-
-View the latest additions and updates to AWS Skill Builder subscription packages below:
-
-### **AWS Builder Labs**
-
-AWS Builder Labs help you learn cloud skills hands-on through practice on the AWS Management Console. Learn at your own pace with hundreds of AWS Builder Labs, available with [AWS Skill Builder Individual subscription packages](https://aws.amazon.com/training/digital/?abl=sec&sec=byw) and [Team subscription packages](https://aws.amazon.com/training/digital/team-subscription/?abl=sec&sec=byw) .
-
-View our latest labs:
-
-- Foundational:
-  - Lab [– Exploring the Amazon Nova Lite Model for Multimodal Understanding](https://explore.skillbuilder.aws/learn/courses/23005/lab-exploring-amazon-nova-lite-model-for-multimodal-understanding)
-  - Lab [– Exploring the Amazon Nova Canvas Model and Amazon Nova Reel Model for Image and Video Generation and Editing](https://explore.skillbuilder.aws/learn/courses/23002/lab-exploring-amazon-nova-canvas-model-and-amazon-nova-reel-model-for-image-and-video-generation-and-editing)
-- Intermediate:
-  - Lab [– Exploring the Amazon Nova Micro Model for Text Generation](https://explore.skillbuilder.aws/learn/courses/23007/lab-exploring-the-amazon-nova-micro-model-for-text-generation)
-  - Lab [– Working with Amazon RDS for PostgreSQL](https://skillbuilder.aws/learn/AWRVBAK8WD/lab--working-with-amazon-rds-for-postgresql/1WVQ24B2F6)
-  - Lab [– Working with Amazon Aurora PostgreSQL](https://skillbuilder.aws/learn/2TG72U3UNE/lab--working-with-amazon-aurora-postgresql/W1UXJHZT62)
-- Advanced:
-  - Lab [– Performance Optimization with Amazon Aurora PostgreSQL](https://skillbuilder.aws/learn/8UQMD4CJZZ/lab--performance-optimization-with-amazon-aurora-postgresql/JNC8J8SGHK)
-  - Lab [– Advanced Features of Amazon Aurora PostgreSQL](https://skillbuilder.aws/learn/WRYH35QXPP/lab--advanced-features-of-amazon-aurora-postgresql/KHRTR4C314)
-  - Lab [– Performance Monitoring for Amazon RDS PostgreSQL and Amazon Aurora](https://skillbuilder.aws/learn/Z8AQ2PVN5P/lab--performance-monitoring-for-amazon-rds-postgresql-and-amazon-aurora/AKCMZWB37W)
-
-### **AWS Digital Classroom**
-
-AWS Digital Classroom courses combine the depth of classroom instructor-led training with the convenience of digital learning. These courses deliver comprehensive knowledge and skills through expert instructor recordings, demonstrations, hands-on labs, knowledge checks, and assessments. Enjoy flexibility in time, location, and pace, plus the ability to pause, rewind, and review content. AWS Digital Classroom is available in AWS Skill Builder [Individual subscription packages](https://aws.amazon.com/training/digital/?abl=sec&sec=byw) and [Team subscription packages](https://aws.amazon.com/training/digital/team-subscription/?abl=sec&sec=byw) . This month, we launched the following AWS Digital Classroom courses:
-
-- Intermediate:
-  - Digital Classroom [– Building Batch Data Analytics Solutions on AWS](https://skillbuilder.aws/learn/9UGKQSCAWE/digital-classroom--building-batch-data-analytics-solutions-on-aws/9PVFB293S2)
-
-## **AWS Certification Exam Preparation and Updates**
-
-### Recertification
-
-[AWS Cloud Quest: Recertify Cloud Practitioner](https://explore.skillbuilder.aws/learn/course/external/view/elearning/17623/aws-cloud-quest-recertify-cloud-practitioner) , a free game-based recertification option\*, is now widely available. Individuals who are within six months or less of their AWS Certified Cloud Practitioner certification expiration date are eligible to use this guided, self-paced recertification option on AWS Skill Builder. This creative approach offers significant advantages: learning through hands-on scenarios with self-paced gameplay in an engaging learning environment. After completing all challenges, individuals will be recertified as AWS Certified Cloud Practitioner for an additional three years from the date of completion. This option is currently available in English, Japanese, Korean, French, and Portuguese (Brazil).
-
-_\*You may still choose from existing exam options to recertify any AWS Certification, including AWS Certified Cloud Practitioner, based on your circumstances and preferences._
-
-### **Exam Preparation**
-
-Prepare confidently for AWS Certification exams. Log in to [AWS Skill Builder](https://skillbuilder.aws/#prepare-for-exam) to register for an Exam Prep Bundle. Each bundle includes free content such as practice question sets and premium content, through subscription, such as official practice exams, self-paced labs, and game-based learning.
-
-This month, we launched the following AWS Certification exam prep materials:
-
-- [Official Practice Exam: AWS Certified AI Practitioner (AIF-C01)](https://skillbuilder.aws/learn/PWGBM4E8ZM/official-practice-exam-aws-certified-ai-practitioner-aifc01--english/B1MF12M4GE) is now available in English, Japanese, Korean, Simplified Chinese, and Portuguese (Brazil).
-- [Official Practice Exam: AWS Certified Machine Learning Engineer – Associate (MLA-C01)](https://skillbuilder.aws/learn/B1MA33BPE6/official-practice-exam-aws-certified-machine-learning-engineer--associate-mlac01--english/SQ932WDU8P) is now available in English, Japanese, Korean, and Simplified Chinese.
-
-## **Free Digital Training on AWS Skill Builder**
-
-[AWS Skill Builder](https://skillbuilder.aws/) provides access to hundreds of free digital training courses and learning programs for learners of all skill levels across more than 200 countries and territories.
-
-This month, we launched the following major update to _AWS Cloud Practitioner Essentials_ \!
-
-### **Free Digital Training Courses**
-
-- Foundational:
-  - _Updated\!_ [AWS Cloud Practitioner Essentials](https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials/8D79F3AVR7)
-
-## **AWS Digital Training from AWS Training Partners**
-
-Intermediate:
-
-- [AWS Generative AI Applications Professional Certificate](https://www.coursera.org/professional-certificates/aws-generative-ai-applications?utm_medium=institutions&utm_source=aws&utm_campaign=aws-atp-courses-webpage-june2025) on Coursera
-- [AWS Generative AI Applications Professional Certificate](https://www.edx.org/certificates/professional-certificate/aws-generative-ai-applications) on edX
-
-_By Alakh Srivastava, Rajesh Natesan, Siva Thangavel, and Yogesh Chaturvedi – March 19, 2025, in Amazon DocumentDB, Amazon ECS, Amazon S3, AWS IoT Core, AWS Step Functions, Energy (Oil and Gas), Industries._
+*By Daniel Vieira, Debora Fanin, Gopi Mudiyala, and Saurabh Trikande – April 8, 2025, in the Advanced section (300), Amazon SageMaker Data & AI Governance, Customer Solutions.*
 
 ---
 
-## Solution Overview
+## Introduction
 
-Advanced digital technologies are revolutionizing the energy sector, enabling organizations to achieve sustainability goals while reducing costs and carbon emissions.  
-According to McKinsey, digital transformation in the energy sector could unlock **$1.6 trillion in value** by 2035, helping reduce **20–30% of operating costs** and **5% of carbon emissions**.
+Headquartered in São Paulo, Brazil, **iFood** is a privately held national company and a leader in food tech in Latin America, processing millions of orders every month. iFood stands out for its strategy of integrating advanced technology into its operations. With the support of **AWS**, iFood has developed a powerful **machine learning (ML)** inference infrastructure using services like **Amazon SageMaker** to create and deploy ML models efficiently. This collaboration has allowed iFood to not only optimize internal processes but also provide innovative solutions for its delivery partners and restaurants.
 
-As the industry moves toward distributed power generation models integrating renewable energy, businesses need smart solutions like **digital grids, AI-powered energy orchestration**, and **real-time monitoring platforms**.
+iFood's ML platform includes a set of tools, processes, and workflows developed with the following main objectives:
+- Accelerating the development and training of AI/ML models, making them more reliable and easier to reproduce.
+- Ensuring that the deployment of these models into production is reliable, scalable, and traceable.
+- Enabling transparent, accessible, and standardized testing, monitoring, and evaluation of models in production.
 
-**TCS's Smart Power Plant solution** was created to meet this need — delivering **0.5% efficiency gains**, **8% NOx reduction**, and **8–10% improvement in renewable energy forecast accuracy**.  
-Built on the **AWS** platform, this solution leverages **AI/ML** power to process real-time data from thousands of energy sensors across multiple locations.
-
-> _This article showcases how TCS and AWS partner together to deliver superior operational efficiency and sustainable business results for the energy sector._
-
----
-
-## Solution Architecture and Data Flow
-
-The solution's architecture is designed with a closed-loop data flow, leveraging AWS services to manage, process, and analyze information comprehensively.
-
-![Blog Image 3 - 1](/static/images/3-BlogImage/blog1-1.jpg)
-
-> _Figure 1. Overall architecture of the Smart Power Plant solution on AWS._
-
-- **Data Ingestion:** Collect data from OPC-UA (industrial devices), on-premises historical systems, and Amazon S3 data lakes.  
-  Each generator unit can send up to 4,000 sensor readings per minute.
-- **Ingestion and Orchestration:** AWS IoT Core ingests data streams and triggers **AWS Step Functions** for automated orchestration.
-- **Data Processing:** **AWS Lambda functions** perform data cleansing, KPI calculations, and alert generation.
-- **Storage:** **Amazon DocumentDB** stores structured data (KPIs, alerts), **Amazon S3** stores raw sensor data and training results.
-- **ML Model Training:** Performed in **Amazon SageMaker**, models stored in **Amazon Elastic Container Registry (ECR)**.
-- **Real-time Inference:** Models deployed via **Amazon ECS** for TCS InTwin (online analytics engine).
-- **Application Deployment:** Front-end/back-end interfaces run in containers on **Amazon ECS** ensuring flexible scaling.
+![Blog Image 1 - 1](/images/3-BlogImage/blog1-1.png)
+> *Figure 1. Overview — iFood and the application of AI/ML in their product system.*
 
 ---
 
-## Key Capabilities
+## Goals and Approach
 
-TCS's Smart Power Plant solution delivers four core capabilities that transform how power plants operate:
+To achieve these goals, iFood leverages **SageMaker** to streamline model training and deployment. By integrating SageMaker features into iFood's infrastructure, key steps are automated — from creating training datasets, training models, deploying them into production, to continuously monitoring their performance.
 
-![Blog Image 3 - 2](/static/images/3-BlogImage/blog1-2.jpg)
-
-> _Figure 2. Four core capabilities of the solution._
-
-1. **Self-Learning AI Digital Twin:**  
-   Combines real-world data and physical AI models to continuously adapt to operating conditions, ensuring accurate predictions and cost savings.
-
-2. **Open and Scalable Solution:**  
-   Can integrate with existing plant systems or proprietary AI models, open architecture with explainability.
-
-3. **Low-code Digital Workspace:**  
-   Enables rapid creation and management of AI models, supporting KPI creation, FMEA, and specific use cases.
-
-4. **Pre-built Platform:**  
-   Pre-configured modules for each plant type, reducing deployment time and enabling easy scaling.
+This article outlines how iFood uses SageMaker to enhance the entire ML lifecycle — from training to inference — and describes architectural changes and capabilities developed by the team.
 
 ---
 
-## Real-World Use Cases
+## AI Inference at iFood
 
-### Solar Power Generation Forecasting
+iFood leverages its AI/ML platform to enhance customer experience across various touchpoints. Some typical use cases include:
 
-Uses ML models and advanced analytics to predict renewable energy output.  
-At an offshore wind farm in the UK, forecast accuracy improved **15.1%**, revenue increased **6%**.
+- **Personalized Recommendations** — Models analyze order history, preferences, and context to suggest appropriate restaurants and dishes, increasing customer satisfaction and order volume.
+- **Smart Order Tracking** — The system predicts delivery times in real-time by combining traffic data, restaurant preparation times, and the location of the delivery driver, proactively notifying customers.
+- **Automated Customer Service** — AI chatbots handle thousands of common requests daily, providing fast responses and retrieving relevant data to support personalization.
+- **Grocery Shopping Support** — The app integrates language models that help customers create shopping lists from voice or text requests.
 
-### Thermal Generation Combustion Process Optimization
-
-At a Japanese power plant, AI improved **0.5% efficiency**, reduced **8% NOx**, saving **$2.5 million/year**.
-
-### Gas Turbine Component Predictive Maintenance
-
-At an Australian power plant, the model predicts failures **8–12 months in advance**, reducing maintenance costs 20% and downtime.
+Thanks to these initiatives, iFood can forecast demand, optimize processes, and deliver consistent user experiences.
 
 ---
 
-## Business Benefits
+## Solution Overview (Legacy Architecture)
 
-TCS's solution helps energy businesses:
+The diagram below illustrates iFood's legacy architecture, where Data Science and Engineering teams had separate workflows — leading to challenges when deploying real-time ML models into production.
 
-| Benefit                                      | Impact                                                                   |
-| -------------------------------------------- | ------------------------------------------------------------------------ |
-| **Reduce Operating Costs**                   | Cut up to 20% of maintenance and operating costs.                        |
-| **Accurate Failure Prediction**              | Forecast error accuracy up to 85%.                                       |
-| **KPI Optimization and Emissions Reduction** | Improve efficiency while reducing carbon footprint.                      |
-| **Workforce Support**                        | AI-assisted decision making, reducing reliance on individual experience. |
+![Blog Image 1 - 2](/images/3-BlogImage/blog1-2.jpg)
+> *Figure 2. Legacy Architecture — Describing data flow and the barriers between teams.*
 
-Additionally, AWS integration helps eliminate data silos, improve productivity, and establish a standardized platform for future power plants.
+Previously, data scientists developed models in notebooks, fine-tuned, and published artifacts. Engineers then had to integrate these artifacts into the production system, causing delays and integration errors. To address this, iFood developed an internal ML platform to unify the process from development to deployment, creating a seamless experience for both teams.
+
+---
+
+## Updated Architecture and ML Go!
+
+One of the core capabilities of iFood's ML platform is providing the infrastructure to serve predictions. The internal platform (called **ML Go!**) is responsible for managing the deployment process, overseeing SageMaker Endpoints and Jobs. ML Go! supports both offline (batch) and real-time (online) predictions, and manages the lifecycle of models (registry, versioning, monitoring).
+
+![Blog Image 1 - 3](/images/3-BlogImage/blog1-3.jpg)
+> *Figure 3. Updated Architecture — Including pipelines, model registry, and inference components.*
+
+The platform provides:
+- Automated ML pipelines (SageMaker Pipelines) for model training and retraining.
+- ML Go! CI/CD to push artifacts, build Docker images, and trigger pipelines.
+- SageMaker Model Registry for versioning and model management.
+- Monitoring mechanisms to detect drift and performance degradation.
+
+---
+
+## Final Architecture: Inference Components & ML Go! Gateway
+
+A significant improvement is the abstraction concept connecting with SageMaker (Endpoints & Jobs) called **ML Go! Gateway**, along with separating "inference components" in the endpoint — helping to divide concerns, accelerate delivery, and manage resources more efficiently. Endpoints now manage multiple inference components, and ML Go! CI/CD only focuses on model version promotion, without deep intervention in infrastructure.
+
+![Blog Image 1 - 4](/images/3-BlogImage/blog1-4.jpg)
+> *Figure 4. Final Architecture — Inference components, ML Go! Gateway, and integration with service accounts.*
+
+In this new structure:
+- Endpoints can contain multiple inference components, allowing load distribution by function or load.
+- ML Go! Dispatcher/Gateway forwards requests to the appropriate endpoint or job.
+- CI/CD handles artifacts (Docker images, configs), and SageMaker Pipeline orchestrates training → evaluation → registry → deployment.
+
+---
+
+## Using SageMaker Inference Model Serving Containers
+
+Standardizing the environment through containers is a crucial element of modern ML platforms. SageMaker provides built-in containers for TensorFlow, PyTorch, XGBoost, and more, as well as the ability to use custom containers.
+
+iFood focuses on using **custom containers** to:
+- Standardize ML code (not directly using notebooks in production).
+- Package dependencies, libraries, and inference logic in an image (e.g., BruceML scaffolding).
+- Easily recreate training and serving environments, monitor results, and debug.
+
+BruceML helps standardize the way training and serving code is written, creating a scaffold compatible with SageMaker (autotuning, deployment hooks, monitoring).
+
+---
+
+## Automating Deployment and Retraining (ML Pipelines & CI/CD)
+
+iFood uses **SageMaker Pipelines** to build CI/CD for ML: pipelines are responsible for orchestrating the entire data flow — from preprocessing, training, evaluation, to promotion in the Model Registry and deployment. ML Go! CI/CD integrates with the organization’s CI/CD system to:
+- Push artifacts (code + container image).
+- Trigger training and evaluation pipelines.
+- Automatically register models into the Model Registry.
+- Deploy or promote models to the appropriate endpoint (online / batch).
+
+Depending on SLA:
+- **Batch inference**: Uses SageMaker Transform jobs for large-scale predictions.
+- **Real-time inference**: Deploys models to SageMaker Endpoint with the appropriate container/instance configuration.
+
+SageMaker Pipelines helps automate and coordinate complex workflows, reducing errors and shortening development cycles.
+
+---
+
+## Running Inference at Different SLA Formats
+
+iFood uses multiple inference methods to meet different requirements:
+- **Real-time endpoints** for low-latency tasks (user-facing).
+- **Batch transform jobs** for large-scale data processing, periodic recommendations.
+- **Asynchronous inference** (SageMaker Asynchronous Inference) for time-consuming inference tasks.
+- **Multi-model endpoints (GPU)** to host multiple models on the same GPU endpoint, optimizing resource use.
+
+The improvements in collaboration between iFood and the SageMaker Inference team include:
+- Optimizing cost and performance for inference (reducing ~50% of cost for some workloads, lowering ~20% average latency when using inference components).
+- Improving autoscaling to handle spikes more effectively (shortening scaling time, enhancing detection of scale events).
+- Easier deployment of LLM / Foundation Models (FM).
+- **Scale-to-zero** feature for endpoints helps save costs when there is no traffic.
+- Multi-model GPU endpoints reduce infrastructure costs in multi-model scenarios.
+
+---
+
+## Model Optimization and Packaging
+
+Some technical points iFood focuses on:
+- Standardizing containers for both training and serving.
+- Automating the build/publish of images to the registry (ECR).
+- Packaging LLM / FM for faster deployment.
+- Supporting autoscaling and scale-to-zero for dev/test environments and low-traffic workloads.
+
+---
+
+## Achieved Benefits & Impact
+
+The benefits iFood has gained:
+- Reduced time to get models into production (faster time-to-market).
+- Increased pipeline & artifact reuse across teams.
+- Lower operational costs through GPU/multi-model optimization and scale-to-zero.
+- Improved stability and model management at scale.
 
 ---
 
 ## Conclusion
 
-**TCS's Smart Power Plant solution on AWS** is shaping the sustainable future of the energy sector.  
-Through AI and advanced analytics, this platform enables efficiency optimization, predictive maintenance, and seamless renewable energy integration.
+By leveraging SageMaker capabilities, iFood has transformed its approach to ML/AI: building a centralized ML platform (ML Go!), automating data flows, standardizing containers, and collaborating with the SageMaker Inference team to optimize efficiency, cost, and scalability. This has helped iFood:
+- Bridge the gap between Data Science and Engineering.
+- Deploy hundreds of ML models reliably.
+- Create a reference platform for organizations wishing to apply inference at scale.
 
-TCS – with deep expertise and AWS-certified teams – has demonstrated successful deployment across multiple plant types, from traditional thermal generation to large-scale renewable energy.
-
-> _For more information, visit TCS's original post on the Smart Power Plant Solution on AWS._
+> *“At iFood, we are leading the way in applying AI and machine learning technologies to transform... The lessons learned have helped us create our internal platform, which can serve as a blueprint for other organizations...”*  
+> – Daniel Vieira, Director of ML Platforms at iFood.
 
 ---
 
 ## About the Authors
 
-> ![Blog Image 3 - 3](/static/images/3-BlogImage/blog1-3.jpg)  
-> **Alakh Srivastava**  
-> _Global Product Director – Smart Power Plant Practice, TCS._  
-> Over 20 years of experience in energy sector digital transformation, specializing in renewable energy, AI, and industrial IoT.
+![Daniel Vieira](/images/3-BlogImage/blog1-5.png)  
+**Daniel Vieira** — Director of Machine Learning Engineering at iFood. He has a background in computer science (BSc & MSc, UFMG) and over a decade of experience in software engineering and ML platforms. He enjoys music, philosophy, and coffee.
 
 ---
 
-> ![Blog Image 3 - 4](/static/images/3-BlogImage/blog1-4.jpg)  
-> **Rajesh Natesan**  
-> _Lead Technical Architect – Smart Power Plant Group, TCS._  
-> 20 years of experience in IoT, AI/ML, and large-scale energy systems architecture.
+![Debora Fanin](/images/3-BlogImage/blog1-6.png)  
+**Debora Fanin** — Senior Customer Solutions Architect at AWS (Brazil). She specializes in managing enterprise customer transformation and designing effective cloud adoption strategies.
 
 ---
 
-> ![Blog Image 3 - 5](/static/images/3-BlogImage/blog1-5.jpg)  
-> **Siva Thangavel**  
-> _Solution Architect Partner at AWS._  
-> Delivers optimal architecture solutions to partners and enterprise customers across multiple industries.
+![Saurabh Trikande](/images/3-BlogImage/blog1-7.png)  
+**Saurabh Trikande** — Senior Product Manager, Amazon Bedrock & SageMaker Inference. Focuses on democratizing AI and inference solutions at scale.
 
 ---
 
-> ![Blog Image 3 - 6](/static/images/3-BlogImage/blog1-6.jpg)  
-> **Yogesh Chaturvedi**  
-> _Principal Solution Architect at AWS – Energy and Utilities._  
-> Focused on helping customers solve challenges through cloud technology. Outside of work, he enjoys hiking, traveling, and sports.
+![Gopi Mudiyala](/images/3-BlogImage/blog1-8.jpg)  
+**Gopi Mudiyala** — Senior Technical Account Manager at AWS. Supports clients in the financial services industry and is passionate about machine learning.
 
 ---

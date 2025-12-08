@@ -119,7 +119,7 @@ Tham dự **AWS Cloud Day Vietnam - AI Edition 2025** mang lại cái nhìn toà
 * **Bảo mật là việc của mọi người:** Nó phải được tích hợp từ dòng mã đầu tiên.
 
 ### Hình ảnh sự kiện
-![Thêm hình ảnh sự kiện của bạn tại đây](https://clouddatacenter.events/wp-content/uploads/2023/12/HNE-09081-scaled.jpg)
+![Thêm hình ảnh sự kiện của bạn tại đây](/images/550507904_4212873012314601_938234409218235304_n.png)
 
 ---
 

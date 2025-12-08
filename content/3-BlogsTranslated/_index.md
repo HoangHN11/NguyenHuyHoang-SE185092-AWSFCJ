@@ -8,8 +8,9 @@ pre: " <b> 3. </b> "
 
 
 
-###  [Blog 1 - New Courses and Certifications Updated from AWS Training and Certification in June 2025](3.1-Blog1/)
-In June 2025, AWS launched 20 new digital training offerings on AWS Skill Builder, including 8 new hands-on Builder Labs, a new Digital Classroom course, and expanded exam prep resources. A free, gamified recertification option for AWS Certified Cloud Practitioner is now available. New official practice exams were released for AWS Certified AI Practitioner and AWS Certified Machine Learning Engineer – Associate. AWS also updated the free Cloud Practitioner Essentials course and introduced new Generative AI professional certificates through Coursera and edX
+###  [Blog 1 - How iFood built a platform to run hundreds of machine learning models with Amazon SageMaker Inference ](3.1-Blog1/)
+This blog introduces how iFood uses Amazon SageMaker Inference to operate hundreds of machine learning models at scale. The post explains how iFood automates model training, deployment, and monitoring processes while optimizing cost and performance with features such as zero-scale endpoints and multi-model GPU serving.
+
 
 ###  [Blog 2 - How Salesforce Business Technology uses AWS Direct Connect SiteLink for reliable global connectivity](3.2-Blog2/)
 This blog describes how Salesforce Business Technology implements AWS Direct Connect SiteLink to build a reliable global network architecture. The post shares how SiteLink helps Salesforce unify network connectivity across seven locations, reduce latency, enhance security, and simplify operations by leveraging the AWS global backbone.

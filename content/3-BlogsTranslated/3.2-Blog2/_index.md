@@ -78,7 +78,7 @@ However, challenges arose including:
 - **High operational costs** and heavy reliance on multiple providers.  
 - **Routing complexity** and **outages in some regions.**
 
-![Blog Image 2 - 1](/static/images/3-BlogImage/blog2-1.png)
+![Blog Image 2 - 1](/images/3-BlogImage/blog2-1.png)
 > *Figure 1. A sample global private data center connection using dedicated circuits.*
 
 ---
@@ -96,7 +96,7 @@ The team:
 - Created new **dedicated VIFs** for production and development environments.  
 - Maintained a **global segmentation** to meet on-premises data storage requirements.
 
-![Blog Image 2 - 2](/static/images/3-BlogImage/blog2-2.png)
+![Blog Image 2 - 2](/images/3-BlogImage/blog2-2.png)
 > *Figure 2. Sample global SiteLink deployment for Production and Development.*
 
 ---
@@ -135,28 +135,28 @@ Adopting **AWS Direct Connect SiteLink** has helped Salesforce:
 
 ## About the Authors
 
-> ![Alexandra Huides](/static/images/3-BlogImage/blog2-3.png)  
+> ![Alexandra Huides](/images/3-BlogImage/blog2-3.png)  
 > **Alexandra Huides**  
 > *Senior Network Solutions Architect at AWS.*  
 > Specializes in large-scale network architecture, helping clients adopt IPv6 and build flexible environments. Outside of work, she enjoys kayaking, traveling, and reading books.
 
 ---
 
-> ![Corey Harris Jr](/static/images/3-BlogImage/blog2-4.png)  
+> ![Corey Harris Jr](/images/3-BlogImage/blog2-4.jpg)  
 > **Corey Harris Jr.**  
 > *Senior Solutions Architect at AWS.*  
 > A network and serverless expert, helping customers optimize their AWS systems. Outside of work, he enjoys gaming, traveling, and spending time with family.
 
 ---
 
-> ![Georgi Stoev](/static/images/3-BlogImage/blog2-5.png)  
+> ![Georgi Stoev](/images/3-BlogImage/blog2-5.png)  
 > **Georgi Stoev**  
 > *Senior Technical Architect at Salesforce.*  
 > With over 20 years of experience in networking, AI, and security, he is passionate about technology, beekeeping, and nature exploration.
 
 ---
 
-> ![Ravi Patel](/static/images/3-BlogImage/blog2-6.png)  
+> ![Ravi Patel](/images/3-BlogImage/blog2-6.jpg)  
 > **Ravi Patel**  
 > *Senior Technical Director at Salesforce.*  
 > With over 15 years of experience in building flexible and high-performance networks, he enjoys surfing, mountaineering, and adventuring around the world.

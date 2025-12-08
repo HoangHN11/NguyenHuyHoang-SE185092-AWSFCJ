@@ -6,10 +6,8 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-
-
-###  [Blog 1 - Các khóa học và chứng chỉ mới được cập nhật từ AWS Training and Certification vào tháng 6 năm 2025](3.1-Blog1/)
-Tháng 6/2025, AWS ra mắt 20 chương trình đào tạo kỹ thuật số mới trên AWS Skill Builder, gồm 8 phòng lab thực hành, 1 khóa học Digital Classroom mới và mở rộng tài liệu luyện thi. AWS cũng giới thiệu hình thức tái chứng nhận miễn phí dạng trò chơi cho Cloud Practitioner, phát hành đề thi thử chính thức cho AI Practitioner và Machine Learning Engineer – Associate, cập nhật khóa Cloud Practitioner Essentials miễn phí và ra mắt chứng chỉ AI tạo sinh trên Coursera và edX.
+###  [Blog 1 - Cách iFood xây dựng nền tảng để chạy hàng trăm mô hình machine learning với Amazon SageMaker Inference](3.1-Blog1/)
+Blog này giới thiệu cách iFood sử dụng Amazon SageMaker Inference để vận hành hàng trăm mô hình machine learning trên quy mô lớn. Bài viết trình bày cách iFood tự động hóa quy trình huấn luyện, triển khai và giám sát mô hình, đồng thời tối ưu chi phí và hiệu suất với các tính năng như zero-scale endpoints và multi-model GPU serving.
 
 ###  [Blog 2 - Cách Salesforce Business Technology sử dụng AWS Direct Connect SiteLink để kết nối toàn cầu đáng tin cậy](3.2-Blog2/)
 Blog này mô tả cách Salesforce Business Technology triển khai AWS Direct Connect SiteLink để xây dựng kiến trúc mạng toàn cầu đáng tin cậy. Bài viết chia sẻ cách SiteLink giúp Salesforce hợp nhất mạng giữa bảy địa điểm, giảm độ trễ, tăng cường bảo mật và đơn giản hóa vận hành bằng cách tận dụng AWS global backbone.

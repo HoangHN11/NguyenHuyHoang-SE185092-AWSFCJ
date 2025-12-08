@@ -30,7 +30,7 @@ Giải pháp **Nhà máy điện thông minh (Smart Power Plant) của TCS** ra 
 
 Kiến trúc của giải pháp được thiết kế theo luồng dữ liệu khép kín, tận dụng các dịch vụ AWS để quản lý, xử lý và phân tích thông tin một cách toàn diện.
 
-![Ảnh blog 3 - 1](/static/images/3-BlogImage/blog3-1.jpg)
+![Ảnh blog 3 - 1](/images/3-BlogImage/blog3-1.jpg)
 > *Hình 1. Kiến trúc tổng thể của giải pháp Nhà máy điện thông minh trên AWS.*
 
 - **Nhập dữ liệu:** Thu thập dữ liệu từ OPC-UA (thiết bị công nghiệp), hệ thống lịch sử tại chỗ và hồ dữ liệu Amazon S3.  
@@ -48,7 +48,7 @@ Kiến trúc của giải pháp được thiết kế theo luồng dữ liệu k
 
 Giải pháp Nhà máy điện thông minh của TCS mang đến bốn khả năng cốt lõi giúp thay đổi cách các nhà máy vận hành:
 
-![Ảnh blog 3 - 2](/static/images/3-BlogImage/blog3-2.jpg)
+![Ảnh blog 3 - 2](/images/3-BlogImage/blog3-2.jpg)
 > *Hình 2. Bốn năng lực cốt lõi của giải pháp.*
 
 1. **Bản sao kỹ thuật số AI tự học (Self-learning Digital Twin):**  
@@ -107,28 +107,28 @@ TCS – với chuyên môn sâu và đội ngũ chuyên gia được AWS chứng
 
 ## Giới thiệu về các tác giả
 
-> ![Ảnh blog 3 - 3](/static/images/3-BlogImage/blog3-3jpg)  
+> ![Ảnh blog 3 - 3](/images/3-BlogImage/blog3-3.jpg)  
 > **Alakh Srivastava**  
 > *Giám đốc sản phẩm toàn cầu – Thực hành Nhà máy điện thông minh, TCS.*  
 > Hơn 20 năm kinh nghiệm trong chuyển đổi kỹ thuật số ngành điện, chuyên về năng lượng tái tạo, AI và IoT công nghiệp.
 
 ---
 
-> ![Ảnh blog 3 - 4](/static/images/3-BlogImage/blog3-4.jpg)  
+> ![Ảnh blog 3 - 4](/images/3-BlogImage/blog3-4.jpg)  
 > **Rajesh Natesan**  
 > *Trưởng nhóm Kỹ thuật chính – Nhóm Nhà máy điện thông minh, TCS.*  
 > 20 năm kinh nghiệm trong IoT, AI/ML và kiến trúc hệ thống năng lượng quy mô lớn.
 
 ---
 
-> ![Ảnh blog 3 - 5](/static/images/3-BlogImage/blog3-5.jpg)  
+> ![Ảnh blog 3 - 5](/images/3-BlogImage/blog3-5.jpg)  
 > **Siva Thangavel**  
 > *Kiến trúc sư giải pháp đối tác tại AWS.*  
 > Cung cấp giải pháp kiến trúc tối ưu cho đối tác và khách hàng doanh nghiệp trong nhiều ngành công nghiệp.
 
 ---
 
-> ![Ảnh blog 3 - 6](//static/images/3-BlogImage/blog3-6.jpg)  
+> ![Ảnh blog 3 - 6](/images/3-BlogImage/blog3-6.jpg)  
 > **Yogesh Chaturvedi**  
 > *Kiến trúc sư giải pháp chính tại AWS – lĩnh vực Năng lượng và Tiện ích.*  
 > Tập trung giúp khách hàng giải quyết thách thức bằng công nghệ đám mây. Ngoài công việc, anh yêu thích đi bộ đường dài, du lịch và thể thao.

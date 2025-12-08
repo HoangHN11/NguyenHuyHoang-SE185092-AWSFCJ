@@ -87,6 +87,6 @@ Attending the **“Discover Agentic AI”** workshop at the Bitexco Financial To
 -   **Funding accelerates innovation**: The LIFT program changes the conversation from "Can we afford this?" to "How fast can we start?"
 
 #### Some event photos
-*Add your event photos here*
+![Add your event photos here](/images/576352733_1552881986068418_5178329068929110174_n.png)
 
 > Overall, the workshop successfully demystified the complex concept of Agentic AI and provided the concrete tools, funding, and expertise required to start building immediately. It was a strategic intervention that empowered attendees to transform their business operations.

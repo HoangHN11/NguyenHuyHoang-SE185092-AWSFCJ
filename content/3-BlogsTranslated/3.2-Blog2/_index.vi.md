@@ -77,7 +77,7 @@ Tuy nhiên, các thách thức nảy sinh gồm:
 - **Chi phí vận hành cao** và phụ thuộc nhiều nhà cung cấp.  
 - **Độ phức tạp định tuyến** và **sự cố kéo dài** ở một số khu vực.
 
-![Ảnh blog 2 - 1](/static/images/3-BlogImage/blog2-1.png)
+![Ảnh blog 2 - 1](/images/3-BlogImage/blog2-1.png)
 > *Hình 1. Một mẫu kết nối trung tâm dữ liệu riêng toàn cầu sử dụng các mạch riêng.*
 
 ---
@@ -95,7 +95,7 @@ Nhóm đã:
 - Tạo các **VIF chuyên dụng mới** cho môi trường sản xuất và phát triển.  
 - Duy trì **phân khúc toàn cầu**, đáp ứng yêu cầu lưu trữ dữ liệu tại chỗ.
 
-![Ảnh blog 2 - 2](/static/images/3-BlogImage/blog2-2.png)
+![Ảnh blog 2 - 2](/images/3-BlogImage/blog2-2.png)
 > *Hình 2. Mẫu triển khai SiteLink toàn cầu cho Sản xuất và Phát triển.*
 
 ---
@@ -134,28 +134,28 @@ Việc áp dụng **AWS Direct Connect SiteLink** đã giúp Salesforce:
 
 ## Giới thiệu về các tác giả
 
-> ![Alexandra Huides](/static/images/3-BlogImage/blog2-3.png)  
+> ![Alexandra Huides](/images/3-BlogImage/blog2-3.png)  
 > **Alexandra Huides**  
 > *Kiến trúc sư giải pháp chuyên gia mạng tại AWS.*  
 > Tập trung vào kiến trúc mạng quy mô lớn, hỗ trợ khách hàng áp dụng IPv6 và xây dựng môi trường linh hoạt. Ngoài công việc, cô yêu thích chèo thuyền, du lịch và đọc sách.
 
 ---
 
-> ![Corey Harris Jr](/static/images/3-BlogImage/blog2-4.png)  
+> ![Corey Harris Jr](/images/3-BlogImage/blog2-4.jpg)  
 > **Corey Harris Jr.**  
 > *Kiến trúc sư giải pháp cấp cao tại AWS.*  
 > Là chuyên gia về mạng và serverless, giúp khách hàng tối ưu hệ thống AWS. Ngoài công việc, anh yêu thích game, du lịch và thời gian bên gia đình.
 
 ---
 
-> ![Georgi Stoev](/static/images/3-BlogImage/blog2-5.png)  
+> ![Georgi Stoev](/images/3-BlogImage/blog2-5.png)  
 > **Georgi Stoev**  
 > *Kiến trúc sư kỹ thuật cấp cao tại Salesforce.*  
 > Với hơn 20 năm kinh nghiệm trong lĩnh vực mạng, AI và bảo mật, anh đam mê công nghệ, nghiên cứu ong mật và khám phá thiên nhiên.
 
 ---
 
-> ![Ravi Patel](/static/images/3-BlogImage/blog2-6.png)  
+> ![Ravi Patel](/images/3-BlogImage/blog2-6.jpg)  
 > **Ravi Patel**  
 > *Giám đốc kỹ thuật cấp cao tại Salesforce.*  
 > Có hơn 15 năm kinh nghiệm xây dựng mạng linh hoạt và hiệu suất cao. Ngoài công việc, anh thích lướt sóng, leo núi, và phiêu lưu khám phá thế giới.

@@ -31,7 +31,7 @@ Built on the **AWS** platform, the solution leverages the power of **AI/ML** to 
 
 The solution architecture is designed with a closed-loop data flow, utilizing AWS services to manage, process, and analyze information comprehensively.
 
-![Blog Image 3 - 1](/static/images/3-BlogImage/blog3-1.jpg)
+![Blog Image 3 - 1](/images/3-BlogImage/blog3-1.jpg)
 > *Figure 1. Overall architecture of the Smart Power Plant solution on AWS.*
 
 - **Data Ingestion:** Data is collected from OPC-UA (industrial devices), on-premise historical systems, and Amazon S3 data lakes.  
@@ -49,7 +49,7 @@ The solution architecture is designed with a closed-loop data flow, utilizing AW
 
 The TCS Smart Power Plant solution provides four core capabilities that transform how plants operate:
 
-![Blog Image 3 - 2](/static/images/3-BlogImage/blog3-2.jpg)
+![Blog Image 3 - 2](/images/3-BlogImage/blog3-2.jpg)
 > *Figure 2. Four core capabilities of the solution.*
 
 1. **Self-learning Digital Twin (AI):**  
@@ -108,28 +108,28 @@ TCS — with deep expertise and a team of AWS-certified specialists — has demo
 
 ## About the Authors
 
-> ![Blog Image 3 - 3](/static/images/3-BlogImage/blog3-3.jpg)  
+> ![Blog Image 3 - 3](/images/3-BlogImage/blog3-3.jpg)  
 > **Alakh Srivastava**  
 > *Global Product Director – Smart Power Plant Practice, TCS.*  
 > Over 20 years of experience in digital transformation in the power industry, specializing in renewable energy, AI, and industrial IoT.
 
 ---
 
-> ![Blog Image 3 - 4](/static/images/3-BlogImage/blog3-4.jpg)  
+> ![Blog Image 3 - 4](/images/3-BlogImage/blog3-4.jpg)  
 > **Rajesh Natesan**  
 > *Chief Technical Group Leader – Smart Power Plant Group, TCS.*  
 > 20 years of experience in IoT, AI/ML, and large-scale energy system architecture.
 
 ---
 
-> ![Blog Image 3 - 5](/static/images/3-BlogImage/blog3-5.jpg)  
+> ![Blog Image 3 - 5](/images/3-BlogImage/blog3-5.jpg)  
 > **Siva Thangavel**  
 > *Partner Solution Architect at AWS.*  
 > Provides optimal architectural solutions for partners and enterprise customers across multiple industries.
 
 ---
 
-> ![Blog Image 3 - 6](/static/images/3-BlogImage/blog3-6.jpg)  
+> ![Blog Image 3 - 6](/images/3-BlogImage/blog3-6.jpg)  
 > **Yogesh Chaturvedi**  
 > *Principal Solution Architect at AWS – Energy and Utilities.*  
 > Focuses on helping customers solve challenges using cloud technology. Outside work, he enjoys hiking, traveling, and sports.

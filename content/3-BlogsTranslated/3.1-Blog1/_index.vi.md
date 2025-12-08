@@ -1,213 +1,187 @@
 ---
 title: "Blog 1"
-date: 2025-10-05
-weight: 3
+date: 2025-10-08
+weight: 1
 chapter: false
-pre: " <b> 3.3. </b> "
+pre: " <b> 3.1. </b> "
 ---
 ---
-# **Các khóa học và chứng chỉ mới được cập nhật từ AWS Training and Certification vào tháng 6 năm 2025**
 
-bởi [Biên tập viên Blog Đào tạo và Chứng nhận](https://aws.amazon.com/blogs/training-and-certification/author/erica-harbison-donham/) | 24 THÁNG 6 NĂM 2025 | trong [Thông báo](https://aws.amazon.com/blogs/training-and-certification/category/post-types/announcements/) , [Đào tạo và Chứng nhận AWS](https://aws.amazon.com/blogs/training-and-certification/category/aws-training-and-certification/) | [Liên kết cố định](https://aws.amazon.com/blogs/training-and-certification/june-2025-new-offerings/) | [Chia sẻ](https://aws.amazon.com/vi/blogs/training-and-certification/june-2025-new-offerings/#)
+# Cách iFood xây dựng nền tảng để chạy hàng trăm mô hình machine learning với Amazon SageMaker Inference
 
-Chào mừng bạn đến với bài đăng tháng 6 thông báo về việc ra mắt khóa đào tạo và chứng chỉ mới—giúp trang bị cho bạn và nhóm của bạn các kỹ năng để làm việc với các dịch vụ và giải pháp AWS.
-
-Bạn đã bỏ lỡ bản cập nhật khóa học tháng 5 của chúng tôi chưa? Hãy xem [tại đây](https://aws.amazon.com/blogs/training-and-certification/may-2025-new-offerings/) .
-
-Tháng này, chúng tôi đã ra mắt 20 sản phẩm đào tạo kỹ thuật số mới trên [AWS Skill Builder](https://skillbuilder.aws/?trk=64736b0c-d90d-411f-8ebc-7d69b097d3cd&sc_channel=el) , bao gồm 8 AWS Builder Labs mới, 1 khóa học Digital Classroom mới, tùy chọn cấp lại chứng chỉ miễn phí dựa trên trò chơi dành cho AWS Certified Cloud Practitioner, cũng như khả năng sử dụng thêm ngôn ngữ cho tài liệu Exam Prep để hỗ trợ các kỳ thi chứng chỉ AWS Certified AI Practitioner và AWS Certified Machine Learning Engineer Associate.
-
-## **Các tính năng đăng ký AWS Skill Builder mới**
-
-[Gói đăng ký AWS Skill Builder](https://aws.amazon.com/training/digital/?abl=sec&sec=byw) có sẵn trên toàn cầu và mở khóa chương trình luyện thi Chứng chỉ AWS nâng cao cùng chương trình đào tạo thực hành AWS Cloud, bao gồm các trải nghiệm học tập tương tác và thực hành như AWS Cloud Quest, AWS Industry Quest, AWS Builder Labs và các thử thách AWS Jam. Các khóa học AWS Digital Classroom đào sâu với hướng dẫn chuyên sâu từ chuyên gia và có sẵn với [gói đăng ký Cá nhân hàng năm](https://aws.amazon.com/training/digital/?abl=sec&sec=byw) hoặc [gói đăng ký Nhóm](https://aws.amazon.com/training/digital/team-subscription/?abl=sec&sec=byw) .
-
-Xem những bổ sung và cập nhật mới nhất cho gói đăng ký AWS Skill Builder bên dưới:
-
-### **Phòng thí nghiệm AWS Builder**
-
-AWS Builder Labs giúp bạn học các kỹ năng đám mây một cách thực tế, thông qua thực hành trên AWS Management Console. Học theo tốc độ của riêng bạn với hàng trăm AWS Builder Labs, có sẵn với [gói đăng ký AWS Skill Builder Cá nhân](https://aws.amazon.com/training/digital/?abl=sec&sec=byw) và [gói đăng ký Nhóm](https://aws.amazon.com/training/digital/team-subscription/?abl=sec&sec=byw) .
-
-Xem phòng thí nghiệm mới nhất của chúng tôi:
-
-* Cơ bản:  
-  * Lab [– Khám phá mô hình Amazon Nova Lite để hiểu đa phương thức](https://explore.skillbuilder.aws/learn/courses/23005/lab-exploring-amazon-nova-lite-model-for-multimodal-understanding)  
-  * Lab [– Khám phá mô hình Amazon Nova Canvas và mô hình Amazon Nova Reel để tạo và chỉnh sửa hình ảnh và video](https://explore.skillbuilder.aws/learn/courses/23002/lab-exploring-amazon-nova-canvas-model-and-amazon-nova-reel-model-for-image-and-video-generation-and-editing)  
-* Trung cấp:  
-  * Lab [– Khám phá mô hình Amazon Nova Micro để tạo văn bản](https://explore.skillbuilder.aws/learn/courses/23007/lab-exploring-the-amazon-nova-micro-model-for-text-generation)  
-  * Lab [– Làm việc với Amazon RDS cho PostgreSQL](https://skillbuilder.aws/learn/AWRVBAK8WD/lab--working-with-amazon-rds-for-postgresql/1WVQ24B2F6)  
-  * Lab [– Làm việc với Amazon Aurora PostgreSQL](https://skillbuilder.aws/learn/2TG72U3UNE/lab--working-with-amazon-aurora-postgresql/W1UXJHZT62)  
-* Trình độ cao:  
-  * Lab [– Tối ưu hóa hiệu suất với Amazon Aurora PostgreSQL](https://skillbuilder.aws/learn/8UQMD4CJZZ/lab--performance-optimization-with-amazon-aurora-postgresql/JNC8J8SGHK)  
-  * Lab [– Các tính năng nâng cao của Amazon Aurora PostgreSQL](https://skillbuilder.aws/learn/WRYH35QXPP/lab--advanced-features-of-amazon-aurora-postgresql/KHRTR4C314)  
-  * Lab [– Giám sát hiệu suất cho Amazon RDS PostgreSQL và Amazon Aurora](https://skillbuilder.aws/learn/Z8AQ2PVN5P/lab--performance-monitoring-for-amazon-rds-postgresql-and-amazon-aurora/AKCMZWB37W)
-
-### **Lớp học kỹ thuật số AWS**
-
-Các khóa học AWS Digital Classroom kết hợp chiều sâu của đào tạo trực tiếp tại lớp học với sự tiện lợi của học tập kỹ thuật số. Các khóa học này cung cấp kiến ​​thức và kỹ năng toàn diện thông qua các bản ghi âm của giảng viên chuyên gia, các buổi trình diễn, phòng thí nghiệm thực hành, kiểm tra kiến ​​thức và đánh giá. Tận hưởng sự linh hoạt về thời gian, địa điểm và tốc độ, cùng với khả năng tạm dừng, tua lại và xem lại nội dung. AWS Digital Classroom có ​​sẵn trong [gói đăng ký Cá nhân](https://aws.amazon.com/training/digital/?abl=sec&sec=byw) AWS Skill Builder và [gói đăng ký Nhóm](https://aws.amazon.com/training/digital/team-subscription/?abl=sec&sec=byw) . Tháng này, chúng tôi đã ra mắt các khóa học AWS Digital Classroom sau:
-
-* Trung cấp:  
-  * Digital Classroom [– Xây dựng giải pháp phân tích dữ liệu hàng loạt trên AWS](https://skillbuilder.aws/learn/9UGKQSCAWE/digital-classroom--building-batch-data-analytics-solutions-on-aws/9PVFB293S2)
-
-## **Chuẩn bị và cập nhật cho kỳ thi chứng chỉ AWS**
-
-### Chứng nhận
-
-[AWS Cloud Quest: Recertify Cloud Practitioner](https://explore.skillbuilder.aws/learn/course/external/view/elearning/17623/aws-cloud-quest-recertify-cloud-practitioner) , một tùy chọn tái chứng nhận dựa trên trò chơi\* miễn phí, hiện đã được cung cấp rộng rãi. Những cá nhân còn sáu tháng hoặc ít hơn trước ngày hết hạn chứng nhận AWS Certified Cloud Practitioner sẽ đủ điều kiện sử dụng tùy chọn tái chứng nhận có hướng dẫn, tự học này trên AWS Skill Builder. Phương pháp tiếp cận sáng tạo này mang lại những lợi thế đáng kể: học thông qua các tình huống thực hành với lối chơi tự học trong một môi trường học tập hấp dẫn. Sau khi hoàn thành tất cả các thử thách, cá nhân sẽ được tái chứng nhận là AWS Certified Cloud Practitioner trong ba năm nữa kể từ ngày hoàn thành. Tùy chọn này hiện có sẵn bằng tiếng Anh, tiếng Nhật, tiếng Hàn, tiếng Pháp và tiếng Bồ Đào Nha (Brazil).
-
-*\*Bạn vẫn có thể lựa chọn các kỳ thi hiện có để cấp lại bất kỳ Chứng chỉ AWS nào, bao gồm AWS Certified Cloud Practitioner, tùy thuộc vào hoàn cảnh và sở thích của bạn.*
-
-### **Chuẩn bị thi**
-
-Tự tin chuẩn bị cho kỳ thi Chứng chỉ AWS. Đăng nhập vào [AWS Skill Builder](https://skillbuilder.aws/#prepare-for-exam) để đăng ký Gói Luyện thi. Mỗi gói bao gồm nội dung miễn phí như bộ câu hỏi luyện tập và nội dung nâng cao, thông qua đăng ký, như bài thi thử chính thức, bài tập tự học và học tập dựa trên trò chơi.
-
-Tháng này, chúng tôi đã ra mắt các tài liệu luyện thi Chứng chỉ AWS sau đây:
-
-* [Bài thi thực hành chính thức: AWS Certified AI Practitioner (AIF-C01)](https://skillbuilder.aws/learn/PWGBM4E8ZM/official-practice-exam-aws-certified-ai-practitioner-aifc01--english/B1MF12M4GE) hiện có sẵn bằng tiếng Anh, tiếng Nhật, tiếng Hàn, tiếng Trung giản thể và tiếng Bồ Đào Nha (Brazil).  
-* [Bài kiểm tra thực hành chính thức: AWS Certified Machine Learning Engineer – Associate (MLA-C01)](https://skillbuilder.aws/learn/B1MA33BPE6/official-practice-exam-aws-certified-machine-learning-engineer--associate-mlac01--english/SQ932WDU8P) hiện có sẵn bằng tiếng Anh, tiếng Nhật, tiếng Hàn và tiếng Trung giản thể.
-
-## **Đào tạo kỹ thuật số miễn phí về AWS Skill Builder**
-
-[AWS Skill Builder](https://skillbuilder.aws/) cung cấp quyền truy cập vào hàng trăm khóa học kỹ thuật số và chương trình học miễn phí cho người học ở mọi trình độ kỹ năng tại hơn 200 quốc gia và vùng lãnh thổ.
-
-Tháng này, chúng tôi đã ra mắt bản cập nhật chính sau đây cho *AWS Cloud Practitioner Essentials* \!
-
-### **Các khóa học kỹ thuật số miễn phí**
-
-* Cơ bản:  
-  * *Đã cập nhật\!* [AWS Cloud Practitioner Essentials](https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials/8D79F3AVR7)
-
-## **Đào tạo kỹ thuật số AWS từ Đối tác đào tạo AWS**
-
-Trung cấp:
-
-* [Chứng chỉ chuyên nghiệp về ứng dụng AI tạo sinh của AWS](https://www.coursera.org/professional-certificates/aws-generative-ai-applications?utm_medium=institutions&utm_source=aws&utm_campaign=aws-atp-courses-webpage-june2025) trên Coursera  
-* [Chứng chỉ chuyên nghiệp về ứng dụng AI tạo sinh của AWS](https://www.edx.org/certificates/professional-certificate/aws-generative-ai-applications) trên edX
-
-
-
-*Bởi Alakh Srivastava, Rajesh Natesan, Siva Thangavel và Yogesh Chaturvedi – ngày 19 tháng 3 năm 2025, trong chuyên mục Amazon DocumentDB, Amazon ECS, Amazon S3, AWS IoT Core, AWS Step Functions, Năng lượng (Dầu khí), Industries.*
+*Bởi Daniel Vieira, Debora Fanin, Gopi Mudiyala và Saurabh Trikande – ngày 08 tháng 4 năm 2025, trong chuyên mục Nâng cao (300), Amazon SageMaker Data & AI Governance, Customer Solutions.*
 
 ---
 
-## Tổng quan về giải pháp
+## Giới thiệu
 
-Các công nghệ kỹ thuật số tiên tiến đang cách mạng hóa ngành năng lượng, cho phép các tổ chức đạt được các mục tiêu bền vững đồng thời giảm chi phí và khí thải carbon.  
-Theo McKinsey, chuyển đổi kỹ thuật số trong lĩnh vực năng lượng có thể mở ra **1,6 nghìn tỷ USD giá trị** vào năm 2035, giúp giảm **20–30% chi phí vận hành** và **5% lượng khí thải carbon**.
+Có trụ sở chính tại São Paulo, Brazil, **iFood** là một công ty tư nhân quốc gia và là công ty hàng đầu trong lĩnh vực công nghệ thực phẩm ở Mỹ Latinh, xử lý hàng triệu đơn đặt hàng hàng tháng. iFood nổi bật với chiến lược kết hợp công nghệ tiên tiến vào hoạt động của mình. Với sự hỗ trợ của **AWS**, iFood đã phát triển cơ sở hạ tầng suy luận **machine learning (ML)** mạnh mẽ, sử dụng các dịch vụ như **Amazon SageMaker** để tạo và triển khai các mô hình ML một cách hiệu quả. Sự hợp tác này đã cho phép iFood không chỉ tối ưu hóa các quy trình nội bộ mà còn cung cấp các giải pháp sáng tạo cho các đối tác giao hàng và nhà hàng của mình.
 
-Khi ngành công nghiệp tiến tới mô hình phát điện phân tán tích hợp năng lượng tái tạo, các doanh nghiệp cần những giải pháp thông minh như **lưới điện số, AI điều phối năng lượng**, và **nền tảng giám sát thời gian thực**.  
+Nền tảng ML của iFood bao gồm một tập hợp các công cụ, quy trình và workflow được phát triển với các mục tiêu chính:
+- Đẩy nhanh quá trình phát triển và đào tạo các mô hình AI/ML, làm cho chúng đáng tin cậy và dễ tái tạo hơn.
+- Đảm bảo rằng việc triển khai các mô hình này vào sản xuất là đáng tin cậy, có thể mở rộng và có thể truy xuất nguồn gốc.
+- Tạo điều kiện thuận lợi cho việc thử nghiệm, giám sát và đánh giá các mô hình trong sản xuất một cách minh bạch, dễ tiếp cận và tiêu chuẩn hóa.
 
-Giải pháp **Nhà máy điện thông minh (Smart Power Plant) của TCS** ra đời để đáp ứng điều đó — mang lại hiệu suất tăng 0,5%, giảm 8% NOx, và cải thiện 8–10% độ chính xác dự báo phát điện tái tạo.  
-Được xây dựng trên nền tảng **AWS**, giải pháp này tận dụng sức mạnh của **AI/ML** để xử lý dữ liệu thời gian thực từ hàng nghìn cảm biến năng lượng trên nhiều địa điểm.
-
-> *Bài viết này trình bày cách TCS và AWS cùng hợp tác mang lại hiệu quả vận hành vượt trội và kết quả kinh doanh bền vững cho ngành năng lượng.*
-
----
-
-## Kiến trúc giải pháp và luồng dữ liệu
-
-Kiến trúc của giải pháp được thiết kế theo luồng dữ liệu khép kín, tận dụng các dịch vụ AWS để quản lý, xử lý và phân tích thông tin một cách toàn diện.
-
-![Ảnh blog 3 - 1](/static/images/3-BlogImage/blog1-1.jpg)
-
-> *Hình 1. Kiến trúc tổng thể của giải pháp Nhà máy điện thông minh trên AWS.*
-
-- **Nhập dữ liệu:** Thu thập dữ liệu từ OPC-UA (thiết bị công nghiệp), hệ thống lịch sử tại chỗ và hồ dữ liệu Amazon S3.  
-  Mỗi tổ máy có thể gửi tới 4.000 giá trị cảm biến mỗi phút.  
-- **Tiếp nhận và điều phối:** AWS IoT Core tiếp nhận luồng dữ liệu và kích hoạt **AWS Step Functions** để điều phối tự động.  
-- **Xử lý dữ liệu:** Các **AWS Lambda functions** thực hiện làm sạch, tính toán KPI và tạo cảnh báo.  
-- **Lưu trữ:** **Amazon DocumentDB** lưu dữ liệu có cấu trúc (KPI, cảnh báo), **Amazon S3** lưu dữ liệu cảm biến thô và kết quả huấn luyện.  
-- **Đào tạo mô hình ML:** Thực hiện trong **Amazon SageMaker**, mô hình được lưu trong **Amazon Elastic Container Registry (ECR)**.  
-- **Suy luận thời gian thực:** Mô hình được triển khai qua **Amazon ECS** cho TCS InTwin (engine phân tích online).  
-- **Triển khai ứng dụng:** Giao diện front-end/back-end chạy container trên **Amazon ECS** đảm bảo mở rộng linh hoạt.
+![Ảnh blog 1 - 1](/images/3-BlogImage/blog1-1.png)
+> *Hình 1. Minh họa tổng quan — iFood và ứng dụng AI/ML trong hệ thống sản phẩm.*
 
 ---
 
-## Các chức năng chính
+## Mục tiêu và cách tiếp cận
 
-Giải pháp Nhà máy điện thông minh của TCS mang đến bốn khả năng cốt lõi giúp thay đổi cách các nhà máy vận hành:
+Để đạt được những mục tiêu trên, iFood tận dụng **SageMaker** để đơn giản hóa việc huấn luyện và triển khai mô hình. Việc tích hợp các tính năng của SageMaker trong cơ sở hạ tầng của iFood tự động hóa các bước quan trọng — từ tạo dataset huấn luyện, huấn luyện mô hình, triển khai mô hình vào production đến liên tục theo dõi hiệu suất.
 
-![Ảnh blog 3 - 2](/static/images/3-BlogImage/blog1-2.jpg)
-> *Hình 2. Bốn năng lực cốt lõi của giải pháp.*
-
-1. **Bản sao kỹ thuật số AI tự học (Self-learning Digital Twin):**  
-   Kết hợp dữ liệu thực và mô hình AI vật lý để liên tục thích nghi với điều kiện hoạt động, đảm bảo dự đoán chính xác và tiết kiệm chi phí.  
-
-2. **Giải pháp mở và có thể mở rộng:**  
-   Có thể tích hợp với hệ thống nhà máy hiện có hoặc mô hình AI riêng, kiến trúc mở và có khả năng giải thích.
-
-3. **Bàn làm việc kỹ thuật số low-code:**  
-   Cho phép tạo và quản lý mô hình AI nhanh chóng, hỗ trợ tạo KPI, FMEA và các use case cụ thể.  
-
-4. **Nền tảng dựng sẵn:**  
-   Các mô-đun có thể cấu hình sẵn cho từng nhà máy, giúp rút ngắn thời gian triển khai và mở rộng quy mô dễ dàng.
+Bài viết này trình bày cách iFood sử dụng SageMaker để cải tiến toàn bộ vòng đời ML — từ huấn luyện đến suy luận — đồng thời mô tả những thay đổi kiến trúc và các khả năng mà đội ngũ đã phát triển.
 
 ---
 
-## Các trường hợp sử dụng thực tế
+## Suy luận AI tại iFood
 
-### Dự báo phát điện mặt trời  
-Sử dụng mô hình ML và phân tích nâng cao để dự đoán sản lượng năng lượng tái tạo.  
-Tại một trang trại gió ngoài khơi ở Anh, độ chính xác dự báo tăng **15,1%**, doanh thu tăng **6%**.  
+iFood khai thác nền tảng AI/ML để nâng cao trải nghiệm khách hàng trên nhiều điểm tiếp xúc. Một số trường hợp sử dụng điển hình:
 
-### Tối ưu hóa quá trình đốt cháy trong sản xuất nhiệt  
-Tại một nhà máy Nhật Bản, AI giúp cải thiện **0,5% hiệu suất**, giảm **8% NOx**, tiết kiệm **2,5 triệu USD/năm**.  
+- **Đề xuất cá nhân hóa** — Mô hình phân tích lịch sử đặt hàng, sở thích và ngữ cảnh để đề xuất nhà hàng và món ăn phù hợp, giúp tăng mức độ hài lòng và số lượng đơn hàng.
+- **Theo dõi đơn hàng thông minh** — Hệ thống dự đoán thời gian giao hàng theo thời gian thực bằng cách kết hợp dữ liệu giao thông, thời gian chuẩn bị nhà hàng và vị trí shipper, từ đó thông báo chủ động cho khách.
+- **Dịch vụ khách hàng tự động** — Chatbot AI xử lý hàng nghìn yêu cầu phổ biến mỗi ngày, cung cấp phản hồi nhanh và có thể truy xuất dữ liệu liên quan để hỗ trợ cá nhân hóa.
+- **Hỗ trợ mua sắm hàng tạp hóa** — Ứng dụng tích hợp mô hình ngôn ngữ giúp khách hàng tạo danh sách mua sắm từ yêu cầu bằng giọng nói hoặc văn bản.
 
-### Bảo trì dự đoán linh kiện tuabin khí  
-Tại một nhà máy Úc, mô hình dự đoán hỏng hóc trước **8–12 tháng**, giảm 20% chi phí bảo trì và thời gian ngừng hoạt động.
+Nhờ những sáng kiến này, iFood có thể dự đoán nhu cầu, tối ưu hoá quy trình và cung cấp trải nghiệm nhất quán cho người dùng.
 
 ---
 
-## Lợi ích kinh doanh
+## Tổng quan về giải pháp (Kiến trúc kế thừa)
 
-Giải pháp của TCS giúp doanh nghiệp năng lượng:
+Sơ đồ dưới đây minh họa kiến trúc kế thừa của iFood, trong đó các nhóm Data Science và Engineering có workflow tách biệt — chính điều này gây ra thách thức khi triển khai mô hình ML thời gian thực vào production.
 
-| Lợi ích | Tác động |
-| ------- | -------- |
-| **Giảm chi phí vận hành** | Cắt giảm tới 20% chi phí bảo trì và vận hành. |
-| **Dự đoán hỏng hóc chính xác** | Độ chính xác dự báo lỗi lên đến 85%. |
-| **Tối ưu hóa KPI và giảm khí thải** | Cải thiện hiệu suất đồng thời giảm phát thải carbon. |
-| **Hỗ trợ lực lượng lao động** | AI hỗ trợ ra quyết định, giảm phụ thuộc vào kinh nghiệm cá nhân. |
+![Ảnh blog 1 - 2](/images/3-BlogImage/blog1-2.jpg)
+> *Hình 2. Kiến trúc kế thừa — mô tả luồng dữ liệu và rào cản giữa các nhóm.*
 
-Ngoài ra, việc tích hợp AWS giúp loại bỏ các silo dữ liệu, nâng cao năng suất và tạo nền tảng chuẩn hóa cho các nhà máy điện trong tương lai.
+Trước đây, các nhà khoa học dữ liệu thường phát triển mô hình trong notebook, tinh chỉnh và xuất bản artifact. Các kỹ sư sau đó phải tích hợp các artifact này vào hệ thống production, dẫn tới độ trễ và lỗi tích hợp. Để khắc phục, iFood đã phát triển một nền tảng ML nội bộ nhằm hợp nhất quy trình từ phát triển đến triển khai, tạo trải nghiệm liền mạch cho cả hai bên.
+
+---
+
+## Kiến trúc cập nhật và ML Go!
+
+Một trong các khả năng cốt lõi của nền tảng ML của iFood là cung cấp cơ sở hạ tầng để phục vụ dự đoán. Nền tảng nội bộ (gọi là **ML Go!**) chịu trách nhiệm triển khai quy trình, quản lý SageMaker Endpoints và Jobs. ML Go! hỗ trợ cả dự đoán ngoại tuyến (batch) và dự đoán thời gian thực (online), đồng thời quản lý lifecycle của mô hình (registry, versioning, monitoring).
+
+![Ảnh blog 1 - 3](/images/3-BlogImage/blog1-3.jpg)
+> *Hình 3. Kiến trúc cập nhật — bao gồm pipeline, model registry và component cho inference.*
+
+Nền tảng cung cấp:
+- ML pipelines tự động (SageMaker Pipelines) để huấn luyện và tái huấn luyện mô hình.
+- ML Go! CI/CD để đẩy artifact, build Docker image, và kích hoạt pipeline.
+- SageMaker Model Registry để versioning và quản lý mô hình.
+- Cơ chế monitoring để phát hiện drift và cảnh báo hiệu năng suy giảm.
+
+---
+
+## Kiến trúc cuối cùng: inference components & ML Go! Gateway
+
+Một cải tiến lớn là khái niệm trừu tượng hóa để kết nối với SageMaker (Endpoints & Jobs) gọi là **ML Go! Gateway**, cùng với tách biệt “inference components” trong endpoint — giúp phân chia mối quan tâm, tăng tốc phân phối và quản lý tài nguyên hiệu quả hơn. Các endpoint giờ đây quản lý nhiều thành phần suy luận (component-based inference), và ML Go! CI/CD chỉ lo phần quảng bá phiên bản mô hình (model promotion), không can thiệp sâu vào tầng hạ tầng.
+
+![Ảnh blog 1 - 4](/images/3-BlogImage/blog1-4.jpg)
+> *Hình 4. Kiến trúc cuối cùng — inference components, ML Go! Gateway và tích hợp với service accounts.*
+
+Trong cấu trúc mới:
+- Endpoints có thể chứa nhiều component inference, cho phép phân tải công việc, chia theo tải hoặc chức năng.
+- ML Go! Dispatcher/ Gateway đóng vai trò chuyển tiếp yêu cầu tới đúng endpoint hoặc job.
+- CI/CD xử lý artifacts (Docker images, configs), SageMaker Pipeline orchestrates training → evaluation → registry → deployment.
+
+---
+
+## Sử dụng SageMaker Inference Model Serving Containers
+
+Tiêu chuẩn hóa môi trường bằng container là yếu tố quyết định của nền tảng ML hiện đại. SageMaker cung cấp các container dựng sẵn cho TensorFlow, PyTorch, XGBoost… đồng thời cho phép đưa container tùy chỉnh.
+
+iFood tập trung sử dụng **container tùy chỉnh** (custom containers) để:
+- Chuẩn hóa mã ML (không dùng trực tiếp notebook vào production).
+- Đóng gói dependency, thư viện và logic inference trong image (ví dụ: BruceML scaffolding).
+- Dễ dàng tái tạo môi trường huấn luyện và phục vụ, theo dõi kết quả và debug.
+
+BruceML giúp chuẩn hóa cách viết mã huấn luyện và phục vụ, tạo scaffold tương thích với SageMaker (autotuning, deployment hooks, monitoring).
+
+---
+
+## Tự động hóa triển khai và đào tạo lại (ML pipelines & CI/CD)
+
+iFood dùng **SageMaker Pipelines** để xây dựng CI/CD cho ML: pipelines chịu trách nhiệm orchestrate toàn bộ luồng dữ liệu — từ data preprocessing, training, evaluation, tới promotion vào Model Registry và deployment. ML Go! CI/CD tích hợp với hệ thống CI/CD của tổ chức để:
+- Đẩy artifact (code + container image).
+- Kích hoạt pipeline huấn luyện và đánh giá.
+- Tự động đăng ký mô hình đạt chuẩn vào Model Registry.
+- Triển khai hoặc promote mô hình lên endpoint phù hợp (online / batch).
+
+Tùy theo SLA:
+- **Batch inference**: sử dụng SageMaker Transform jobs cho dự đoán quy mô lớn.
+- **Real-time inference**: triển khai mô hình tới SageMaker Endpoint với cấu hình container/instance phù hợp.
+
+SageMaker Pipelines giúp tự động hóa và điều phối các workflow phức tạp, giảm sai sót và rút ngắn vòng lặp phát triển.
+
+---
+
+## Chạy suy luận ở các định dạng SLA khác nhau
+
+iFood tận dụng nhiều phương thức suy luận để đáp ứng các yêu cầu khác nhau:
+- **Real-time endpoints** cho các tác vụ cần latency thấp (user-facing).
+- **Batch transform jobs** cho xử lý dữ liệu quy mô lớn, tính toán gợi ý định kỳ.
+- **Asynchronous inference** (SageMaker Asynchronous Inference) cho các tác vụ suy luận tốn thời gian.
+- **Multi-model endpoints (GPU)** để host nhiều mô hình trên cùng một GPU endpoint, tối ưu sử dụng tài nguyên.
+
+Những cải tiến hợp tác giữa iFood và đội SageMaker Inference bao gồm:
+- Tối ưu hóa chi phí và hiệu suất cho inference (giảm ~50% chi phí cho một số workloads, giảm ~20% latency trung bình khi dùng inference components).
+- Cải tiến autoscaling để xử lý spikes hiệu quả hơn (rút ngắn thời gian scale, cải thiện phát hiện scale events).
+- Hỗ trợ triển khai LLM / Foundation Models (FM) dễ dàng hơn.
+- Tính năng **scale-to-zero** cho endpoints giúp tiết kiệm chi phí khi không có traffic.
+- Multi-model GPU endpoints giúp giảm chi phí cơ sở hạ tầng cho trường hợp nhiều mô hình.
+
+---
+
+## Tối ưu hóa và đóng gói mô hình
+
+Một số điểm kỹ thuật iFood tập trung:
+- Chuẩn hóa container cho cả training và serving.
+- Tự động hóa build/publish images lên registry (ECR).
+- Đóng gói LLM / FM để triển khai nhanh hơn.
+- Hỗ trợ autoscaling và scale-to-zero cho môi trường dev/test và low-traffic workloads.
+
+---
+
+## Lợi ích đạt được & tác động
+
+Những lợi ích iFood thu được:
+- Giảm thời gian đưa mô hình vào production (faster time-to-market).
+- Tăng khả năng tái sử dụng pipeline & artifacts giữa các nhóm.
+- Hạ chi phí vận hành nhờ tối ưu GPU/multi-model và scale-to-zero.
+- Cải thiện độ ổn định và khả năng quản lý mô hình ở quy mô lớn.
 
 ---
 
 ## Kết luận
 
-**Giải pháp Nhà máy điện thông minh TCS trên AWS** đang định hình tương lai bền vững của ngành năng lượng.  
-Thông qua AI và phân tích nâng cao, nền tảng này giúp tối ưu hiệu suất, bảo trì dự đoán, và tích hợp liền mạch năng lượng tái tạo.
+Sử dụng các khả năng của SageMaker, iFood đã chuyển đổi cách tiếp cận ML/AI: xây dựng nền tảng ML tập trung (ML Go!), tự động hóa luồng dữ liệu, chuẩn hóa container và hợp tác cùng nhóm SageMaker Inference để tối ưu tính hiệu quả, chi phí và khả năng mở rộng. Việc này đã giúp iFood:
+- Thu hẹp khoảng cách giữa Data Science và Engineering.
+- Triển khai hàng trăm mô hình ML một cách đáng tin cậy.
+- Tạo nền tảng tham chiếu cho các tổ chức muốn ứng dụng inference ở quy mô lớn.
 
-TCS – với chuyên môn sâu và đội ngũ chuyên gia được AWS chứng nhận – đã chứng minh khả năng triển khai thành công trên nhiều loại hình nhà máy, từ nhiệt điện truyền thống đến năng lượng tái tạo quy mô lớn.
-
-> *Để tìm hiểu thêm, hãy xem bài đăng gốc của TCS về Giải pháp Nhà máy điện thông minh trên AWS.*
+> *“Tại iFood, chúng tôi đi đầu trong việc áp dụng công nghệ AI và máy học biến đổi... Các bài học đã học được hỗ trợ chúng tôi trong việc tạo ra nền tảng nội bộ, có thể đóng vai trò như một kế hoạch chi tiết cho các tổ chức khác...”*  
+> – Daniel Vieira, Giám đốc Nền tảng ML tại iFood.
 
 ---
 
 ## Giới thiệu về các tác giả
 
-> ![Ảnh blog 3 - 3](/static/images/3-BlogImage/blog1-3.jpg)  
-> **Alakh Srivastava**  
-> *Giám đốc sản phẩm toàn cầu – Thực hành Nhà máy điện thông minh, TCS.*  
-> Hơn 20 năm kinh nghiệm trong chuyển đổi kỹ thuật số ngành điện, chuyên về năng lượng tái tạo, AI và IoT công nghiệp.
+![Daniel Vieira](/images/3-BlogImage/blog1-5.png)  
+**Daniel Vieira** — Giám đốc Kỹ thuật Học máy tại iFood. Có nền tảng khoa học máy tính (BSc & MSc, UFMG) và hơn một thập kỷ kinh nghiệm về kỹ thuật phần mềm và nền tảng ML. Thích âm nhạc, triết học và cà phê.
 
 ---
 
-> ![Ảnh blog 3 - 4](/static/images/3-BlogImage/blog1-4.jpg)  
-> **Rajesh Natesan**  
-> *Trưởng nhóm Kỹ thuật chính – Nhóm Nhà máy điện thông minh, TCS.*  
-> 20 năm kinh nghiệm trong IoT, AI/ML và kiến trúc hệ thống năng lượng quy mô lớn.
+![Debora Fanin](/images/3-BlogImage/blog1-6.png)  
+**Debora Fanin** — Giám đốc giải pháp khách hàng cấp cao, AWS (Brazil). Chuyên quản lý chuyển đổi khách hàng doanh nghiệp, thiết kế các chiến lược áp dụng đám mây hiệu quả về chi phí.
 
 ---
 
-> ![Ảnh blog 3 - 5](/static/images/3-BlogImage/blog1-5.jpg)  
-> **Siva Thangavel**  
-> *Kiến trúc sư giải pháp đối tác tại AWS.*  
-> Cung cấp giải pháp kiến trúc tối ưu cho đối tác và khách hàng doanh nghiệp trong nhiều ngành công nghiệp.
+![Saurabh Trikande](/images/3-BlogImage/blog1-7.png)  
+**Saurabh Trikande** — Giám đốc sản phẩm cấp cao, Amazon Bedrock & SageMaker Inference. Tập trung vào dân chủ hóa AI và giải pháp suy luận ở quy mô lớn.
 
 ---
 
-> ![Ảnh blog 3 - 6](/static/images/3-BlogImage/blog1-6.jpg)  
-> **Yogesh Chaturvedi**  
-> *Kiến trúc sư giải pháp chính tại AWS – lĩnh vực Năng lượng và Tiện ích.*  
-> Tập trung giúp khách hàng giải quyết thách thức bằng công nghệ đám mây. Ngoài công việc, anh yêu thích đi bộ đường dài, du lịch và thể thao.
-
----
+![Gopi Mudiyala](/images/3-BlogImage/blog1-8.jpg)  
+**Gopi Mudiyala** — Giám đốc tài khoản kỹ thuật cấp cao, AWS. Hỗ trợ khách hàng ngành dịch vụ tài chính và đam mê máy học.
