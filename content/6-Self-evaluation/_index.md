@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 During my internship at AMAZON WEB SERVICES VIETNAM COMPANY LIMITED from 08-09-2025 to 08-12-2025, I was given a valuable opportunity to apply theoretical knowledge to real-world professional tasks and gain practical working experience.
 
-Throughout this internship, I took part in a web development project aimed at building an online jewelry store. My main responsibilities included designing essential features, developing backend functions, and improving the user interface. Through this project, I significantly improved my web programming skills, had my first exposure to the C# programming language, enhanced my English communication ability, and strengthened my teamwork and interpersonal skills.
+During my internship, I had the opportunity to participate in a project to develop an online jewelry e-commerce website. My main responsibilities focused on frontend development using React, including designing basic user interface features, improving user experience, and enhancing the overall visual appearance of the website. Through this project, I significantly improved my web programming skills, strengthened my knowledge of React, enhanced my English proficiency, and developed essential teamwork and professional communication skills.
 
 Regarding work attitude, I always strived to complete assigned tasks with high quality, strictly followed workplace regulations, and actively cooperated with colleagues to maintain a positive and efficient working environment.
 

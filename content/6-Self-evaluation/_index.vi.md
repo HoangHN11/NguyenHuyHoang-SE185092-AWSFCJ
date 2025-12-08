@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 Trong thời gian thực tập tại CÔNG TY TNHH AMAZON WEB SERVICES VIỆT NAM từ ngày 08/09/2025 đến 08/12/2025, tôi đã có cơ hội vận dụng kiến thức chuyên ngành vào môi trường làm việc thực tế, đồng thời tích lũy nhiều kinh nghiệm quý báu.
 
-Trong suốt kỳ thực tập, tôi được tham gia vào dự án phát triển website bán trang sức trực tuyến. Nhiệm vụ chính của tôi bao gồm thiết kế các chức năng cơ bản, xây dựng xử lý phía backend và cải thiện giao diện người dùng. Thông qua dự án này, tôi đã nâng cao kỹ năng lập trình web, lần đầu tiếp cận ngôn ngữ lập trình C#, cải thiện kỹ năng tiếng Anh, cũng như rèn luyện khả năng làm việc nhóm và giao tiếp trong môi trường chuyên nghiệp.
+Trong suốt quá trình thực tập, tôi đã có cơ hội tham gia vào dự án xây dựng website kinh doanh trang sức trực tuyến. Công việc chính của tôi tập trung vào phát triển giao diện người dùng (Frontend) bằng React, bao gồm thiết kế các chức năng hiển thị cơ bản, tối ưu trải nghiệm người dùng và nâng cao tính thẩm mỹ cho website. Thông qua dự án này, tôi đã nâng cao kỹ năng lập trình web, cải thiện khả năng sử dụng React, đồng thời rèn luyện kỹ năng làm việc nhóm, giao tiếp trong môi trường chuyên nghiệp và nâng cao trình độ tiếng Anh.
 
 Về thái độ làm việc, tôi luôn nỗ lực hoàn thành công việc được giao với tinh thần trách nhiệm cao, tuân thủ nghiêm túc nội quy của công ty và chủ động phối hợp với đồng nghiệp để tạo ra môi trường làm việc tích cực, hiệu quả.
 
