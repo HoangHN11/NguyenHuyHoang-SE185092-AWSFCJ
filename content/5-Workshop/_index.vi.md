@@ -7,7 +7,7 @@ pre: "<b>5. </b>"
 
 # Batch-Based Clickstream Analytics Platform
 
-![Architecture](/images/5-Workshop/architecture.png)
+![Architecture](/images/Diagram.drawio.png)
 <p align="center"><em>Figure: Architecture Batch-base Clickstream Analytics Platform.</em></p>
 
 #### Tổng quan

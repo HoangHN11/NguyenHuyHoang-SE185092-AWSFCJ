@@ -1,11 +1,69 @@
 ---
+title: "Walkthrough Kiến trúc"
+weight: 2
+chapter: false
+pre: " <b> 5.2. </b> "
+---
+
+![Architecture](/images/Diagram.drawio.png)
+<p align="center"><em>Sơ đồ triển khai AWS Jewelry Web (biên soạn cho workshop).</em></p>
+
+---
+
+## 5.2.1 Người dùng & Frontend
+
+- **Trình duyệt**: Xem catalog, chi tiết sản phẩm, giỏ hàng, checkout.
+- **CloudFront + S3 (static hosting)**: React build phân phối toàn cầu với TLS ACM; Route 53 trỏ domain. CloudFront truy cập S3 qua origin access.
+- **Cognito**: User Pool cấp JWT cho đăng ký/đăng nhập; React dùng token gọi API.
+
+Lợi ích: Phân phối nhanh (<2s mục tiêu), SSL chuẩn, token bảo vệ API.
+
+---
+
+## 5.2.2 API & Dữ liệu
+
+- **Lightsail API (.NET)**: CRUD sản phẩm, giỏ hàng, điều phối upload ảnh. Chạy với IAM role chỉ đọc Secrets Manager.
+- **Lightsail DB (MySQL/Postgres)**: Lưu catalog, người dùng, giỏ/đơn hàng. Chỉ private cho API.
+- **Secrets Manager**: Lưu mật khẩu DB và tên bucket (`DB_PASSWORD`, `APP_CONFIG`). API lấy khi khởi động/lần đầu dùng.
+- **CloudWatch Logs**: Log truy cập/lỗi API; nền cho quan sát vận hành và analytics nhẹ.
+- **S3 (media bucket)**: Bucket private cho ảnh sản phẩm. Luồng upload dùng presigned URL; CloudFront đọc ảnh.
+
+Bảo mật: HTTPS toàn tuyến, CloudFront-to-S3 kiểm soát, không hardcode credential, IAM tối thiểu cho role API.
+
+---
+
+## 5.2.3 Danh tính & Truy cập
+
+- **Amazon Cognito**: Đăng ký/đăng nhập, phát token; API kiểm JWT cho route bảo vệ.
+- **Route 53 + ACM**: Domain + chứng chỉ TLS cho CloudFront; tùy chọn domain cho API nếu xuất internet.
+- **IAM**: Role API giới hạn Secrets Manager + CloudWatch; bucket policy cho CloudFront đọc; upload chỉ qua presigned PUT.
+
+---
+
+## 5.2.4 Vận hành & Quan sát
+
+- **CloudWatch**: Log/metric API, alarm cho lỗi/tốc độ phản hồi.
+- **Backup/DR nhẹ**: Snapshot DB Lightsail định kỳ; cân nhắc bật versioning S3.
+- **Chi phí**: Lightsail chi phí dự đoán được; S3/CF/Cognito/SM/CW tối thiểu với lưu lượng nêu trên.
+
+---
+
+## 5.2.5 Các pha triển khai (6–12 tuần theo proposal)
+
+1) **Assessment (Tuần 1)**: Yêu cầu, sơ đồ kiến trúc, schema DB, danh sách secrets.  
+2) **Hạ tầng cơ bản (Tuần 2)**: S3 hosting, CloudFront+ACM, Route 53, Lightsail API/DB, Cognito, Secrets Manager, CloudWatch logs.  
+3) **Backend (Tuần 3)**: Lấy secrets, presigned upload, CRUD, xác thực token Cognito, log CloudWatch.  
+4) **Frontend (Tuần 4)**: UI shop React, UI login Cognito, UI upload ảnh, tích hợp API, deploy S3+CF.  
+5) **Testing & go-live (Tuần 5)**: Kiểm FE↔API↔S3↔DB, test bảo mật (IAM/SM), E2E.  
+6) **Handover (Tuần 6)**: Runbook cập nhật secrets, chuyển giao sở hữu, hướng dẫn vận hành.
+---
 title: "Architecture Walkthrough"
 weight: 52
 chapter: false
 pre: " <b> 5.2. </b> "
 ---
 
-![Architecture](/images/5-Workshop/architecture.png)
+![Architecture](/images/Diagram.drawio.png)
 <p align="center"><em>Hình: Batch-based Clickstream Analytics Platform.</em></p>
 
 ---

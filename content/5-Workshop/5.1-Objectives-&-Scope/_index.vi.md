@@ -1,5 +1,57 @@
 ---
 title: "Mục tiêu & Phạm vi"
+weight: 2
+chapter: false
+pre: " <b> 5.1. </b> "
+---
+
+### Bối cảnh kinh doanh
+
+Dự án AWS Jewelry Web xây dựng trang thương mại điện tử trang sức với:
+
+- React SPA chạy trên **S3 + CloudFront** (HTTPS qua ACM, domain Route 53).
+- **API .NET** trên **AWS Lightsail** phục vụ sản phẩm/giỏ hàng/đơn hàng.
+- **Lightsail MySQL/Postgres** cho dữ liệu giao dịch.
+- **Amazon Cognito** cho đăng ký/đăng nhập và ủy quyền API.
+- **Amazon S3** lưu ảnh sản phẩm qua presigned upload.
+- **CloudWatch** log API và **Secrets Manager** lưu mật khẩu DB + cấu hình bucket.
+
+Giả định lưu lượng: <100k request/tháng, không cần autoscaling nâng cao. Ưu tiên ổn định, bảo mật media và phân phối nhanh toàn cầu.
+
+---
+
+### Mục tiêu (kết quả workshop)
+
+- **Rõ kiến trúc**: Giải thích cách S3+CloudFront, Lightsail API/DB, Cognito, Secrets Manager phối hợp cho bài toán e-commerce nhỏ nhưng an toàn.
+- **Thực hành end-to-end**: Dựng frontend CDN, API đọc Secrets Manager, Cognito auth, upload ảnh S3 an toàn, log CloudWatch đầy đủ.
+- **Tiêu chí thành công (từ proposal)**:
+  - Tải trang <2s toàn cầu (CloudFront + S3).
+  - API Lightsail ổn định trong tải dự kiến.
+  - Truy vấn DB nhanh, an toàn.
+  - Cognito signup/login ổn định.
+  - Upload ảnh an toàn lên S3.
+  - Log API hiển thị trên CloudWatch.
+
+---
+
+### Phạm vi
+
+- CRUD catalog lõi, giỏ hàng cơ bản.
+- Xác thực Cognito và kiểm token ở API.
+- Presigned S3 upload cho ảnh sản phẩm.
+- CDN + HTTPS qua CloudFront/ACM; mapping domain Route 53.
+- CloudWatch log/metric; Secrets Manager cho mật khẩu DB + tên bucket.
+- Lộ trình 6–12 tuần: khảo sát → hạ tầng → backend → frontend → kiểm thử → bàn giao.
+
+---
+
+### Ngoài phạm vi (theo proposal)
+
+- AI/ML, luồng e-commerce phức tạp, xử lý ảnh nâng cao.
+- Multi-region/DR, portal admin phức tạp, tích hợp bên thứ ba.
+- Autoscaling nâng cao hoặc CI/CD phức tạp ngoài nhu cầu cơ bản.
+---
+title: "Mục tiêu & Phạm vi"
 weight: 51
 chapter: false
 pre: " <b> 5.1. </b> "

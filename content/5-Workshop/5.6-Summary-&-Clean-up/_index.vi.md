@@ -1,79 +1,38 @@
 ---
 title: "Tổng kết & Dọn dẹp"
-weight: 56
+weight: 2
 chapter: false
 pre: " <b> 5.6. </b> "
 ---
 
 ## 5.6.1 Tóm tắt
 
-Sau khi hoàn thành bài Lab chúng ta đã dựng được một **Clickstream Analytics Platform** hoàn chỉnh:
+Chúng ta đã lên kế hoạch và phạm vi AWS Jewelry Web như một stack e-commerce an toàn, tối ưu chi phí:
 
-1. **Lớp User-Facing**
-   - Ứng dụng Next.js (`ClickSteam.NextJS`) trên Amplify + CloudFront  
-   - Xác thực người dùng bằng Cognito  
-   - PostgreSQL OLTP (`clickstream_web`) trên `SBW_EC2_WebDB` (public subnet)  
+- **Frontend**: React trên S3 + CloudFront với TLS ACM, domain Route 53.
+- **Backend**: .NET API trên Lightsail; DB Lightsail (MySQL/Postgres); Secrets Manager cho mật khẩu DB/bucket.
+- **Identity**: Cognito User Pool cho signup/login và verify token API.
+- **Media**: Bucket S3 private; upload qua presigned PUT; CloudFront đọc object.
+- **Observability**: CloudWatch log cấu trúc cho API + sự kiện nghiệp vụ; tùy chọn export S3/Athena.
 
-2. **Lớp Ingestion & Raw Data**
-   - API Gateway HTTP API: `clickstream-http-api` (route `POST /clickstream`)  
-   - Lambda Ingest: `clickstream-lambda-ingest`  
-   - S3 Raw bucket: `clickstream-s3-ingest/events/YYYY/MM/DD/event-<uuid>.json`  
-
-3. **Lớp Analytics Private**
-   - VPC với public & private subnets (`SBW_Project_VPC`)  
-   - S3 Gateway Endpoint, SSM Interface Endpoints  
-   - Data Warehouse trên EC2: `SBW_EC2_ShinyDWH`, DB `clickstream_dw`  
-   - ETL Lambda trong VPC: `SBW_Lamda_ETL`, được trigger bởi `SBW_ETL_HOURLY_RULE`  
-   - R Shiny dashboards (`sbw_dashboard`) chỉ truy cập qua SSM port forwarding  
-
-Tổng thể, kiến trúc này cho thấy cách thiết kế một **batch-based analytics platform** an toàn, tối ưu chi phí, chủ yếu dùng serverless + hai EC2.
+Tiêu chí thành công: tải trang <2s qua CDN, API ổn định, DB an toàn, Cognito ổn định, upload an toàn, log API đầy đủ.
 
 ---
 
-## 5.6.2 Nội dung chính 
+## 5.6.2 Điểm rút ra
 
-- **Separation of concerns**:
-  - OLTP và Analytics tách trên 2 EC2 khác nhau, thuộc các domain logic khác nhau.  
-- **Security**:
-  - DW và Shiny chạy trong private subnet, không có public IP.  
-  - SSM Session Manager thay thế SSH truyền thống.  
-  - S3 Gateway Endpoint giữ traffic S3 trong private network của AWS.  
-- **Tối ưu chi phí**:
-  - Không sử dụng NAT Gateway.  
-  - ETL dùng serverless (Lambda + EventBridge).  
-  - S3 làm storage giá rẻ cho dữ liệu thô.  
-- **Dễ mở rộng**:
-  - Thiết kế hiện tại là batch-based, nhưng có thể mở rộng sang real-time, analytics phức tạp hơn hoặc chuyển sang các công nghệ DW khác.
+- Không để secrets trong code: dùng Secrets Manager + IAM tối thiểu cho role API.
+- Hiệu năng từ edge: CloudFront + S3 + ACM; giảm hop backend cho static.
+- Ưu tiên độ tin cậy: log ý nghĩa (auth, upload, CRUD, sự kiện sản phẩm) và đặt alarm lỗi/độ trễ.
+- Kiểm soát chi phí: Lightsail dự đoán được; CloudWatch retention tinh chỉnh; analytics tùy chọn khi cần.
 
 ---
 
-## 5.6.3 Dọn dẹp Resource
+## 5.6.3 Checklist dọn dẹp
 
-1. **Amplify & CloudFront**
-   - Xóa Amplify app (`ClickSteam.NextJS`).  
-   - Thao tác này cũng xóa CloudFront distribution.
-
-2. **API Gateway & Lambda**
-   - Xóa `clickstream-http-api`.  
-   - Xóa các Lambda:
-     - `clickstream-lambda-ingest`  
-     - `SBW_Lamda_ETL`  
-
-3. **EventBridge**
-   - Xóa rule `SBW_ETL_HOURLY_RULE`.  
-
-4. **S3 Buckets**
-   - Làm rỗng (empty) rồi xóa:
-     - `clickstream-s3-ingest` (RAW clickstream)  
-     - `clickstream-s3-sbw` (assets) nếu không dùng cho dự án khác  
-
-5. **EC2 Instances**
-   - Stop hoặc terminate:
-     - `SBW_EC2_WebDB`  
-     - `SBW_EC2_ShinyDWH`  
-   - Release Elastic IP (nếu có gán).
-
-6. **VPC & Networking**
-   - Xóa VPC endpoints (S3 Gateway, SSM Interface Endpoints).  
-   - Xóa route tables, subnets, Internet Gateway.  
-   - Cuối cùng, xóa `SBW_Project_VPC` nếu không còn dùng.
+- S3 + CloudFront: gỡ distribution và đối tượng nếu ngừng site.
+- Cognito: xóa User Pool nếu không dùng.
+- Lightsail: snapshot hoặc terminate instance API/DB; release static IP.
+- Secrets Manager: xóa secrets `DB_PASSWORD`, `APP_CONFIG`.
+- CloudWatch: xóa log group/alarm; tắt export.
+- Route 53/ACM: gỡ record/chứng chỉ không dùng.
