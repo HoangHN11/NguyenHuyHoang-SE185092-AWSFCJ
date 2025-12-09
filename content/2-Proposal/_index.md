@@ -227,3 +227,5 @@ Cost Contribution distribution between Partner, Customer, AWS:
 - Accepted by customer/stakeholder.
 
  
+
+## File TEMPLETE DOCX: [DOWLOAD Proposal (DOCX)](https://drive.google.com/drive/folders/1TLXOU4XDvSqv1hfWYhXhWilc5G53iN2H?usp=sharing)

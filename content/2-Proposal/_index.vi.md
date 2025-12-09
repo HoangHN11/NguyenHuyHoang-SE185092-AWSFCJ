@@ -231,3 +231,7 @@ Phân phối đóng góp chi phí giữa Đối tác, Khách hàng, AWS:
 - CloudWatch log & Cognito login hoạt động.
 
 - Được chấp nhận bởi khách hàng/bên liên quan.
+
+
+
+## File TEMPLETE DOCX: [DOWLOAD Proposal (DOCX)](https://drive.google.com/drive/folders/1TLXOU4XDvSqv1hfWYhXhWilc5G53iN2H?usp=sharing)
