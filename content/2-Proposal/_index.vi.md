@@ -10,13 +10,13 @@ pre: " <b> 2. </b> "
 
 ## **Hệ thống bán hàng trực tuyến dựa trên đám mây sử dụng React, .NET và MySQL trên AWS Lightsail**
 
-![Architecture](/images/Diagram.drawio.png)
+
 
 # Hành trình AWS First Cloud AI – **Kế hoạch dự án**
 
 #
 
-# T1VN – Đại học FPT – Chia sẻ Video
+# T1VN – FPT University – Video Share
 
 # 03/12/2025
 
@@ -58,63 +58,65 @@ pre: " <b> 2. </b> "
 
 # 1. **NỀN TẢNG VÀ ĐỘNG LỰC**
 
-# 1.1 **EXECUTIVE SUMMARY**
+# 1.1 **TÓM TẮT CHỦ ĐỀ**
 
-The AWS Jewelry Web project entails the development of a comprehensive Jewelry E-commerce Platform. The system architecture comprises a backend and database infrastructure hosted on AWS Lightsail, coupled with a React-based frontend deployed via Amazon S3 and CloudFront. This architecture is designed to ensure scalability, high security, and operational cost optimization by leveraging essential yet highly effective Cloud services.
+Dự án Trang web Trang sức AWS bao gồm phát triển Nền tảng thương mại điện tử trang sức toàn diện. Kiến trúc hệ thống bao gồm cơ sở hạ tầng backend và cơ sở dữ liệu được lưu trữ trên AWS Lightsail, kết hợp với frontend dựa trên React được triển khai thông qua Amazon S3 và CloudFront. Kiến trúc này được thiết kế để đảm bảo khả năng mở rộng, bảo mật cao và tối ưu hóa chi phí vận hành bằng cách tận dụng các dịch vụ đám mây thiết yếu nhưng hiệu quả.
 
-**The system provides the main features such as:**
+**Hệ thống cung cấp các tính năng chính như:**
 
-- Jewelry product management.
-- Product image uploading capabilities.
-- Shopping cart functionality.
-- User registration and authentication via AWS Cognito.
-- Backend API operations on Lightsail with MySQL/Postgres data storage.
-- Content delivery acceleration and international standard SSL processing via CDN.
+- Quản lý sản phẩm trang sức.
+- Khả năng tải lên hình ảnh sản phẩm.
+- Chức năng giỏ hàng.
+- Đăng ký người dùng và xác thực thông qua AWS Cognito.
+- Các hoạt động API backend trên Lightsail với lưu trữ dữ liệu MySQL/Postgres.
+- Tăng tốc độ cung cấp nội dung và xử lý SSL tiêu chuẩn quốc tế thông qua CDN.
 
-  # 1.2 **PROJECT SUCCESS CRITERIA**
+  # 1.2 **TIÊU CHÍ THÀNH CÔNG DỰ ÁN**
 
-- **Performance:** Website load time under 2 seconds for international access, facilitated by CloudFront CDN.
-- **Stability:** Backend operates stably on Lightsail under actual traffic conditions.
-- **Data Integrity:** Secure database operations with rapid retrieval speeds.
-- **User Management:** Stable and secure user management via Amazon Cognito.
-- **Security:** Secure image uploading processes via Amazon S3.
-- **Monitoring:** Comprehensive API logging through Amazon CloudWatch.
+- **Hiệu suất:** Thời gian tải trang web dưới 2 giây cho truy cập quốc tế, được hỗ trợ bởi CDN CloudFront.
+- **Tính ổn định:** Backend hoạt động ổn định trên Lightsail trong điều kiện lưu lượng thực tế.
+- **Tính toàn vẹn dữ liệu:** Các hoạt động cơ sở dữ liệu an toàn với tốc độ truy xuất nhanh.
+- **Quản lý người dùng:** Quản lý người dùng ổn định và an toàn thông qua Amazon Cognito.
+- **Bảo mật:** Các quy trình tải lên hình ảnh an toàn thông qua Amazon S3.
+- **Giám sát:** Ghi nhật ký API toàn diện thông qua Amazon CloudWatch.
 
-  # 1.3 **ASSUMPTIONS**
+  # 1.3 **CÁC GIẢ ĐỊNH**
 
-- **Traffic Volume:** Moderate traffic levels (less than 100,000 requests/month).
-- **Scaling:** No requirement for advanced autoscaling configurations.
-- **Domain:** Domain name is pre-acquired or will be purchased via Amazon Route 53\.
-- **Competency:** The development team possesses proficiency in Node.js and React.
+- **Khối lượng lưu lượng:** Mức lưu lượng vừa phải (dưới 100.000 yêu cầu/tháng).
+- **Mở rộng quy mô:** Không yêu cầu cấu hình tự động mở rộng quy mô nâng cao.
+- **Miền:** Tên miền được mua trước hoặc sẽ được mua thông qua Amazon Route 53\.
+- **Năng lực:** Đội phát triển có kỹ năng thành thạo Node.js và React.
 
-# 2. **SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM**
+# 2. **KIẾN TRÚC GIẢI PHÁP / SƠ ĐỒ KIẾN TRÚC**
 
-# 2.1 **TECHNICAL ARCHITECTURE DIAGRAM**
+# 2.1 **SƠ ĐỒ KIẾN TRÚC KỸ THUẬT**
 
-# 2.2 **TECHNICAL PLAN**
+![Architecture](/images/Diagram.drawio.png)
 
-- **Frontend:** Hosted on Amazon S3 with Amazon CloudFront CDN and HTTPS enabled via AWS Certificate Manager (ACM).
-- **Backend API:** .NET runtime environment on AWS Lightsail.
-- **Database:** MySQL/PostgreSQL hosted on AWS Lightsail.
-- **Authentication:** Amazon Cognito User Pool.
-- **Image Storage:** Amazon S3.
-- **Logging:** Amazon CloudWatch.
-- **Secrets Management:** AWS Secrets Manager.
+# 2.2 **KẾ HOẠCH KỸ THUẬT**
 
-# 2.3 **PROJECT PLAN**
+- **Frontend:** Được lưu trữ trên Amazon S3 với CDN Amazon CloudFront và HTTPS được bật thông qua AWS Certificate Manager (ACM).
+- **API Backend:** Môi trường runtime .NET trên AWS Lightsail.
+- **Cơ sở dữ liệu:** MySQL/PostgreSQL được lưu trữ trên AWS Lightsail.
+- **Xác thực:** Amazon Cognito User Pool.
+- **Lưu trữ hình ảnh:** Amazon S3.
+- **Ghi nhật ký:** Amazon CloudWatch.
+- **Quản lý Secrets:** AWS Secrets Manager.
 
-The implementation timeline is estimated to range from 6 to 12 weeks, contingent upon the final project scope.
+# 2.3 **KẾ HOẠCH DỰ ÁN**
 
-# 2.4 **SECURITY CONSIDERATIONS**
+Thời gian triển khai ước tính từ 6 đến 12 tuần, tùy thuộc vào phạm vi dự án cuối cùng.
 
-- **Access Control:** S3 private access configured, granting read permissions exclusively to CloudFront.
-- **Credential Management:** API utilizes private keys stored securely in AWS Secrets Manager.
-- **Encryption:** Full system-wide HTTPS implementation.
-- **Authentication Security:** User login protected by Amazon Cognito.
+# 2.4 **CÁC KHÍA CẠNH AN TOÀN**
 
-# 3. **ACTIVITIES AND DELIVERABLES**
+- **Kiểm soát truy cập:** Truy cập riêng tư S3 được cấu hình, cấp quyền đọc độc quyền cho CloudFront.
+- **Quản lý thông tin đăng nhập:** API sử dụng các khóa riêng được lưu trữ an toàn trong AWS Secrets Manager.
+- **Mã hóa:** Triển khai HTTPS trên toàn bộ hệ thống.
+- **Bảo mật xác thực:** Đăng nhập người dùng được bảo vệ bởi Amazon Cognito.
 
-# 3.1 **ACTIVITIES AND DELIVERABLES**
+# 3. **CÁC HOẠT ĐỘNG VÀ DELIVERABLES**
+
+# 3.1 **CÁC HOẠT ĐỘNG VÀ DELIVERABLES**
 
 |         Project Phase         | Timeline | Activities                                                                                                                                                                                                                                                                                                                                                                                                             | Deliverables / Milestones                                                                                                                                                          |  MD   |
 | :---------------------------: | :------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---: |
@@ -129,7 +131,7 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 
 ##
 
-# 3.2 **OUT OF SCOPE**
+# 3.2 **NGOÀI PHẠM VI**
 
 - AI/Machine Learning features.
 - Complex E-commerce functionalities.
@@ -138,94 +140,94 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 - Complex administrative systems.
 - Integration with third-party systems.
 
-# 3.3 **PATH TO PRODUCTION**
+# 3.3 **CON ĐƯỜNG ĐI VÀO PRODUCTION**
 
-- Operational Excellence Optimization.
-- Secrets Management – Production Hardening.
-- Extended Error Handling.
-- Deployment & Production Verification.
-- Disaster Recovery Plan.
-- Production Handover.
+- Tối ưu hóa Sự xuất sắc trong hoạt động.
+- Quản lý Secrets – Làm cứng Production.
+- Xử lý lỗi mở rộng.
+- Triển khai & Xác minh Production.
+- Kế hoạch Phục hồi thảm họa.
+- Bàn giao Production.
 
-# 4. **EXPECTED AWS COST BREAKDOWN BY SERVICES**
+# 4. **DỰ TÍNH CHI PHÍ AWS CHI TIẾT THEO DỊCH VỤ**
 
-| Service Name                   | Upfront cost | Monthly cost  | Region                   |
-| :----------------------------- | :----------- | :------------ | :----------------------- |
-| Amazon S3                      | 0.00 USD     | 0.26 USD      | Asia Pacific (Singapore) |
-| Amazon CloudFront (CDN cho FE) | 0.00 USD     | 0.17 USD      | Asia Pacific (Singapore) |
-| AWS ACM                        | 0.00 USD     | 0 USD         | Asia Pacific (Singapore) |
-| Amazon Route 53                | 0.00 USD     | 0.50–1.00 USD | Asia Pacific (Singapore) |
-| AWS Lightsail – Database       | 0.00 USD     | 10–15 USD     | Asia Pacific (Singapore) |
-| Amazon Cognito                 | 0.00 USD     | 2.00 USD      | Asia Pacific (Singapore) |
-| AWS Secrets Manager            | 0.00 USD     | 0.40 USD      | Asia Pacific (Singapore) |
-| Amazon CloudWatch              | 0.00 USD     | 0.30 USD      | Asia Pacific (Singapore) |
-| AWS Lightsail – API Server     | 0.00 USD     | 5 \- 10 USD   | Asia Pacific (Singapore) |
+| Tên dịch vụ                    | Chi phí trước mặt | Chi phí hàng tháng | Khu vực                            |
+| :----------------------------- | :---------------- | :----------------- | :--------------------------------- |
+| Amazon S3                      | 0.00 USD          | 0.26 USD           | Châu Á Thái Bình Dương (Singapore) |
+| Amazon CloudFront (CDN cho FE) | 0.00 USD          | 0.17 USD           | Châu Á Thái Bình Dương (Singapore) |
+| AWS ACM                        | 0.00 USD          | 0 USD              | Châu Á Thái Bình Dương (Singapore) |
+| Amazon Route 53                | 0.00 USD          | 0.50–1.00 USD      | Châu Á Thái Bình Dương (Singapore) |
+| AWS Lightsail – Cơ sở dữ liệu  | 0.00 USD          | 10–15 USD          | Châu Á Thái Bình Dương (Singapore) |
+| Amazon Cognito                 | 0.00 USD          | 2.00 USD           | Châu Á Thái Bình Dương (Singapore) |
+| AWS Secrets Manager            | 0.00 USD          | 0.40 USD           | Châu Á Thái Bình Dương (Singapore) |
+| Amazon CloudWatch              | 0.00 USD          | 0.30 USD           | Châu Á Thái Bình Dương (Singapore) |
+| AWS Lightsail – Máy chủ API    | 0.00 USD          | 5 \- 10 USD        | Châu Á Thái Bình Dương (Singapore) |
 
-# 5. **TEAM**
+# 5. **ĐỘI TẠO**
 
-**Partner Executive Sponsor**
+**Bảo trợ điều hành của Đối tác**
 
-| Name | Title | Description | Email / Contact Info |
-| :--- | :---- | :---------- | :------------------- |
-|      |       |             |                      |
+| Tên | Chức danh | Mô tả | Email / Thông tin liên hệ |
+| :-- | :-------- | :---- | :------------------------ |
+|     |           |       |                           |
 
-**Project Stakeholders**
+**Các bên liên quan của dự án**
 
-| Name | Title | Stakeholder for | Email / Contact Info |
-| :--- | :---- | :-------------- | :------------------- |
-|      |       |                 |                      |
+| Tên | Chức danh | Bên liên quan cho | Email / Thông tin liên hệ |
+| :-- | :-------- | :---------------- | :------------------------ |
+|     |           |                   |                           |
 
-**Partner Project Team**
+**Đội dự án của Đối tác**
 
-| Name                 | Title              | Role                 | Email / Contact Info         |
-| :------------------- | :----------------- | :------------------- | :--------------------------- |
-| Nguyễn Duy Hiếu      | Product Owner      | Project Manager (BE) | Hieundse185047@fpt.edu.vn    |
-| Lưu Ngọc Ngân Giang  | Software Developer | Developer (BE)       | luungocngangiang25@gmail.com |
-| Nguyễn Huy Hoàng     | Software Developer | Developer (FE)       | Hoangnhse185092@fpt.edu.vn   |
-| Trần Hồ Phương Khanh | Software Developer | Developer (FE)       | khanhthpse185070@fpt.edu.vn  |
-| Tăng Khanh Nhi       | Software Developer | Developer (FE)       | tangkhanhnhi111@gmail.com    |
+| Tên                  | Chức danh               | Vai trò             | Email / Thông tin liên hệ    |
+| :------------------- | :---------------------- | :------------------ | :--------------------------- |
+| Nguyễn Duy Hiếu      | Chủ sản phẩm            | Quản lý dự án (BE)  | Hieundse185047@fpt.edu.vn    |
+| Lưu Ngọc Ngân Giang  | Nhà phát triển phần mềm | Nhà phát triển (BE) | luungocngangiang25@gmail.com |
+| Nguyễn Huy Hoàng     | Nhà phát triển phần mềm | Nhà phát triển (FE) | Hoangnhse185092@fpt.edu.vn   |
+| Trần Hồ Phương Khanh | Nhà phát triển phần mềm | Nhà phát triển (FE) | khanhthpse185070@fpt.edu.vn  |
+| Tăng Khanh Nhi       | Nhà phát triển phần mềm | Nhà phát triển (FE) | tangkhanhnhi111@gmail.com    |
 
-**Project Escalation Contacts**
+**Danh sách liên hệ căng thẳng của dự án**
 
-| Name | Title | Role | Email / Contact Info |
-| :--- | :---- | :--- | :------------------- |
-|      |       |      |                      |
+| Tên | Chức danh | Vai trò | Email / Thông tin liên hệ |
+| :-- | :-------- | :------ | :------------------------ |
+|     |           |         |                           |
 
-# 6. **RESOURCES & COST ESTIMATES**
+# 6. **NGUỒN LỰC & ƯỚC TÍNH CHI PHÍ**
 
-| Resource                                             | Responsibility                                                                                                                                                                                  | Rate (USD) / Hour |
-| :--------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| Solution Architects \[number of assigned headcount\] | \- Thiết kế kiến trúc AWS (S3, CloudFront, Lightsail, ACM, Route 53, Secrets Manager) \- Tư vấn bảo mật & tối ưu chi phí \- Review triển khai & best practices                                  | 12                |
-| Engineers \[number of assigned headcount\]           | \- Triển khai hạ tầng: S3, CloudFront, Route 53, ACM, Lightsail \- Cấu hình CI/CD, upload FE lên S3 \- Triển khai Node.js API trên Lightsail \- Cấu hình Secrets Manager, logging và CloudWatch | 6                 |
-| Other (Please specify)                               | \- Kiểm thử hệ thống sau triển khai \- Tư vấn hỗ trợ khách hàng                                                                                                                                 | 0                 |
+| Nguồn lực                                                 | Trách nhiệm                                                                                                                                                                                           | Tỷ lệ (USD) / Giờ |
+| :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Kiến trúc sư giải pháp \[số lượng nhân sự được chỉ định\] | \- Thiết kế kiến trúc AWS (S3, CloudFront, Lightsail, ACM, Route 53, Secrets Manager) \- Tư vấn bảo mật & tối ưu chi phí \- Review triển khai & best practices                                        | 12                |
+| Kỹ sư \[số lượng nhân sự được chỉ định\]                  | \- Triển khai cơ sở hạ tầng: S3, CloudFront, Route 53, ACM, Lightsail \- Cấu hình CI/CD, upload FE lên S3 \- Triển khai Node.js API trên Lightsail \- Cấu hình Secrets Manager, logging và CloudWatch | 6                 |
+| Khác (Vui lòng chỉ rõ)                                    | \- Kiểm thử hệ thống sau triển khai \- Tư vấn hỗ trợ khách hàng                                                                                                                                       | 0                 |
 
-\* Note: Refer to section “activities & deliverables” for the list of project phases
+\* Ghi chú: Tham khảo phần "các hoạt động & deliverables" để xem danh sách các giai đoạn dự án
 
-|    Project Phase     | Solution Architects | Engineers | Other (Please specify) | Total Hours |
-| :------------------: | :-----------------: | :-------: | :--------------------: | :---------: |
-|   S3 \+ CloudFront   |          1          |     2     |                        |      3      |
-| Lightsail API \+ DB  |          1          |     4     |                        |      4      |
-|       Cognito        |          1          |     2     |                        |      5      |
-| Logging & Monitoring |          1          |     1     |                        |      3      |
-|     Total Hours      |          4          |    12     |                        |     15      |
-|      Total Cost      |                     |           |                        |             |
+|   Giai đoạn dự án    | Kiến trúc sư giải pháp | Kỹ sư | Khác (Vui lòng chỉ rõ) | Tổng số giờ |
+| :------------------: | :--------------------: | :---: | :--------------------: | :---------: |
+|   S3 \+ CloudFront   |           1            |   2   |                        |      3      |
+| Lightsail API \+ DB  |           1            |   4   |                        |      4      |
+|       Cognito        |           1            |   2   |                        |      5      |
+| Logging & Monitoring |           1            |   1   |                        |      3      |
+|     Tổng số giờ      |           4            |  12   |                        |     15      |
+|     Tổng chi phí     |                        |       |                        |             |
 
-Cost Contribution distribution between Partner, Customer, AWS:
+Phân phối đóng góp chi phí giữa Đối tác, Khách hàng, AWS:
 
-| Party    | Contribution (USD) | % Contribution of Total |
-| :------- | :----------------- | :---------------------- |
-| Customer |                    |                         |
-| Partner  |                    |                         |
-| AWS      |                    |                         |
+| Bên        | Đóng góp (USD) | % Đóng góp của Tổng cộng |
+| :--------- | :------------- | :----------------------- |
+| Khách hàng |                |                          |
+| Đối tác    |                |                          |
+| AWS        |                |                          |
 
-# 7. **ACCEPTANCE**
+# 7. **CHẤP NHẬN**
 
-- Website runs stably on real domain.
+- Trang web chạy ổn định trên tên miền thực.
 
-- API fully connects to DB.
+- API kết nối đầy đủ với DB.
 
-- Upload product images works.
+- Tải lên hình ảnh sản phẩm hoạt động.
 
-- CloudWatch log & Cognito login works.
+- CloudWatch log & Cognito login hoạt động.
 
-- Accepted by customer/stakeholder.
+- Được chấp nhận bởi khách hàng/bên liên quan.

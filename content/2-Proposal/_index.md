@@ -1,58 +1,56 @@
 ---
-title: "Đề xuất dự án"
+title: "Project Proposal"
 date: 2025-11-10
 weight: 1
 chapter: false
 pre: " <b> 2. </b> "
 ---
-# **Nền tảng thương mại điện tử trang sức**  
-## **Hệ thống bán hàng trực tuyến dựa trên đám mây sử dụng React, .NET và MySQL trên AWS Lightsail**  
+# **Jewelry E-Commerce Platform**  
+## **Cloud-Based Online Sales System Using React, .NET, and MySQL on AWS Lightsail**  
 
-![Architecture](/images/Diagram.drawio.png)
 
-# Hành trình AWS First Cloud AI – **Kế hoạch dự án**
+# AWS First Cloud AI Journey – **Project Plan**
 
-# 
 
 # T1VN – FPT University – Video Share
 
 # 03/12/2025
 
-# Mục lục
+# Table of Contents
 
-**[1 NỀN TẢNG VÀ ĐỘNG LỰC	3](#background-and-motivation)**
+**[1 BACKGROUND AND MOTIVATION	3](#background-and-motivation)**
 
-[1.1 TÓM TẮT CHỦ ĐỀ	3](#executive-summary)
+[1.1 EXECUTIVE SUMMARY	3](#executive-summary)
 
-[1.2 TIÊU CHÍ THÀNH CÔNG DỰ ÁN	3](#heading=)
+[1.2 PROJECT SUCCESS CRITERIA	3](#heading=)
 
-[1.3 CÁC GIẢ ĐỊNH	3](#heading=)
+[1.3 ASSUMPTIONS	3](#heading=)
 
-[**2 KIẾN TRÚC GIẢI PHÁP / SƠ ĐỒ KIẾN TRÚC	4**](#heading=)
+[**2 SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM	4**](#heading=)
 
-[2.1 SƠ ĐỒ KIẾN TRÚC KỸ THUẬT	4](#technical-architecture-diagram)
+[2.1 TECHNICAL ARCHITECTURE DIAGRAM	4](#technical-architecture-diagram)
 
-[2.2 KẾ HOẠCH KỸ THUẬT	4](#technical-plan)
+[2.2 TECHNICAL PLAN	4](#technical-plan)
 
-[2.3 KẾ HOẠCH DỰ ÁN	5](#heading=)
+[2.3 PROJECT PLAN	5](#heading=)
 
-[2.4 CÁC KHÍA CẠNH AN TOÀN	5](#security-considerations)
+[2.4 SECURITY CONSIDERATIONS	5](#security-considerations)
 
-[**3 CÁC HOẠT ĐỘNG VÀ DELIVERABLES	6**](#activities-and-deliverables)
+[**3 ACTIVITIES AND DELIVERABLES	6**](#activities-and-deliverables)
 
-[3.1 CÁC HOẠT ĐỘNG VÀ DELIVERABLES	6](#activities-and-deliverables-1)
+[3.1 ACTIVITIES AND DELIVERABLES	6](#activities-and-deliverables-1)
 
-[3.2 NGOÀI PHẠM VI	8](#out-of-scope)
+[3.2 OUT OF SCOPE	8](#out-of-scope)
 
-[3.3 CON ĐƯỜNG ĐI VÀO PRODUCTION	8](#path-to-production)
+[3.3 PATH TO PRODUCTION	8](#path-to-production)
 
-[**4 DỰ TÍNH CHI PHÍ AWS CHI TIẾT THEO DỊCH VỤ	9**](#expected-aws-cost-breakdown-by-services)
+[**4 EXPECTED AWS COST BREAKDOWN BY SERVICES	9**](#expected-aws-cost-breakdown-by-services)
 
-[**5 ĐỘI TẠO	10**](#team)
+[**5 TEAM	10**](#team)
 
-[**6 NGUỒN LỰC & ƯỚC TÍNH CHI PHÍ	10**](#resources-&-cost-estimates)
+[**6 RESOURCES & COST ESTIMATES	10**](#resources-&-cost-estimates)
 
-[**7 CHẤP NHẬN	11**](#acceptance)
+[**7 ACCEPTANCE	11**](#acceptance)
 
 #   1.  **BACKGROUND AND MOTIVATION** 
 
@@ -88,6 +86,7 @@ The AWS Jewelry Web project entails the development of a comprehensive Jewelry E
 # 2. **SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM**
 
   # 2.1 **TECHNICAL ARCHITECTURE DIAGRAM** 
+  ![Architecture](/images/Diagram.drawio.png)
 
   # 2.2 **TECHNICAL PLAN** 
 
@@ -228,4 +227,3 @@ Cost Contribution distribution between Partner, Customer, AWS:
 - Accepted by customer/stakeholder.
 
  
-
