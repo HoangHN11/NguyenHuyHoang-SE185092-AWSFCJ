@@ -19,7 +19,7 @@ chapter: false
 
 &emsp; **Major:** Software Engineering
 
-&emsp; **Class:** 
+&emsp; **Class:** SE185092
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
