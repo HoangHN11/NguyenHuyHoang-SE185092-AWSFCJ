@@ -7,7 +7,7 @@ pre: "<b>5. </b>"
 
 # AWS Jewelry Web Workshop
 
-![Architecture](/images/5-Workshop/architecture.png)
+![Architecture](/images/Diagram.drawio.png)
 <p align="center"><em>Figure: Simplified AWS Jewelry Web architecture (CloudFront + S3, Lightsail API/DB, Cognito, Secrets, CloudWatch).</em></p>
 
 #### Overview
